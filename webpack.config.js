@@ -37,6 +37,11 @@ module.exports = {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=10000&mimetype=image/svg+xml',
       },
+      {
+        test: /\.(jpg|jpeg|gif|png|ico)$/,
+        exclude: /node_modules/,
+        loader:'file-loader?name=images/[path][name].[ext]&context=./src/images'
+     }
     ]
   },
   plugins: [
