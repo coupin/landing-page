@@ -205,6 +205,10 @@ a {
   }
 }
 
+.app-buttons {
+  margin-top: 30px;
+}
+
 .section.footer {
   display: flex;
   flex-direction: column;
@@ -270,4 +274,18 @@ a {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.app-buttons {
+  a img {
+    height: 40px;
+
+    &.google {
+      height: 60px
+    }
+
+    &.apple {
+      margin: 10px;
+    }
+  }
 }
