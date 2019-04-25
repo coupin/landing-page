@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366.008" height="716.964" viewBox="0 0 1366.008 716.964">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.988;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.11" y1="1" x2="0.096" y2="0.069" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#18ad87"/>
+      <stop offset="0.89" stop-color="#1bae86" stop-opacity="0.89"/>
+      <stop offset="1" stop-color="#49b59b" stop-opacity="0.922"/>
+    </linearGradient>
+  </defs>
+  <path id="hero_overlay" data-name="hero overlay" class="cls-1" d="M0,0H1366V513.819C1362.484,500.379-3.739,714.69,0,716.964Z" transform="translate(0.008)"/>
+</svg>
