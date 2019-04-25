@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170.466" height="196.337" viewBox="0 0 170.466 196.337">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b9efdd;
+      }
+
+      .cls-2 {
+        opacity: 0.13;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-13, .cls-4 {
+        fill: #c8c8c8;
+      }
+
+      .cls-14, .cls-4, .cls-5, .cls-6, .cls-7 {
+        opacity: 0.35;
+      }
+
+      .cls-10, .cls-5 {
+        fill: #35343d;
+      }
+
+      .cls-11, .cls-6 {
+        fill: #4b4a52;
+      }
+
+      .cls-12, .cls-7 {
+        fill: #2cd0a9;
+      }
+
+      .cls-8 {
+        fill: none;
+        stroke: #e6e6e6;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-9 {
+        font-size: 6px;
+        font-family: WorkSans-Regular, Work Sans;
+      }
+    </style>
+    <image id="image" width="130.342" height="36.848" xlink:href="data:image/png;base64,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"/>
+  </defs>
+  <g id="Asset_2promotion" data-name="Asset 2promotion" transform="translate(12 15.669)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+      <ellipse id="Ellipse_121" data-name="Ellipse 121" class="cls-1" cx="85.233" cy="85.233" rx="85.233" ry="85.233" transform="translate(-12 -5.747)"/>
+      <use id="Rectangle_453" data-name="Rectangle 453" class="cls-2" transform="translate(8.183 -15.669)" xlink:href="#image"/>
+      <rect id="Rectangle_454" data-name="Rectangle 454" class="cls-3" width="119.458" height="26.541" rx="6.48" transform="translate(13.638 -11.406)"/>
+      <rect id="Rectangle_455" data-name="Rectangle 455" class="cls-4" width="23.995" height="2.783" rx="1.391" transform="translate(105.614 6.143)"/>
+      <rect id="Rectangle_456" data-name="Rectangle 456" class="cls-5" width="34.637" height="3.415" rx="1.708" transform="translate(19.776 -5.203)"/>
+      <rect id="Rectangle_457" data-name="Rectangle 457" class="cls-6" width="57.559" height="3.415" rx="1.708" transform="translate(19.776 0.154)"/>
+      <rect id="Rectangle_458" data-name="Rectangle 458" class="cls-7" width="25.403" height="3.415" rx="1.708" transform="translate(19.776 5.51)"/>
+      <rect id="Rectangle_459" data-name="Rectangle 459" class="cls-5" width="16.152" height="6.985" rx="3.492" transform="translate(111.867 -8.03)"/>
+      <use id="Rectangle_460" data-name="Rectangle 460" class="cls-2" transform="translate(8.183 16.229)" xlink:href="#image"/>
+      <rect id="Rectangle_461" data-name="Rectangle 461" class="cls-3" width="119.458" height="26.541" rx="6.48" transform="translate(13.638 20.491)"/>
+      <rect id="Rectangle_462" data-name="Rectangle 462" class="cls-4" width="23.995" height="2.783" rx="1.391" transform="translate(105.614 38.041)"/>
+      <rect id="Rectangle_463" data-name="Rectangle 463" class="cls-5" width="34.637" height="3.415" rx="1.708" transform="translate(19.776 26.695)"/>
+      <rect id="Rectangle_464" data-name="Rectangle 464" class="cls-6" width="57.559" height="3.415" rx="1.708" transform="translate(19.776 32.052)"/>
+      <rect id="Rectangle_465" data-name="Rectangle 465" class="cls-7" width="25.403" height="3.415" rx="1.708" transform="translate(19.776 37.408)"/>
+      <rect id="Rectangle_466" data-name="Rectangle 466" class="cls-5" width="16.152" height="6.985" rx="3.492" transform="translate(111.867 23.131)"/>
+      <rect id="Rectangle_467" data-name="Rectangle 467" class="cls-8" width="119.771" height="25.947" rx="6.48" transform="translate(133.101 82.484) rotate(180)"/>
+      <image id="Rectangle_468" data-name="Rectangle 468" class="cls-2" width="143.541" height="39.597" transform="translate(1.583 47.027)" xlink:href="data:image/png;base64,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"/>
+      <rect id="Rectangle_469" data-name="Rectangle 469" class="cls-3" width="132.91" height="29.698" rx="6.48" transform="translate(6.819 50.327)"/>
+      <text id="_-43_" data-name="-43%" class="cls-9" transform="translate(113.292 63.95)"><tspan x="0" y="0">-43%</tspan></text>
+      <rect id="Rectangle_470" data-name="Rectangle 470" class="cls-10" width="38.536" height="3.822" rx="1.911" transform="translate(9.893 60.727)"/>
+      <rect id="Rectangle_471" data-name="Rectangle 471" class="cls-11" width="64.043" height="3.822" rx="1.911" transform="translate(9.893 66.716)"/>
+      <rect id="Rectangle_472" data-name="Rectangle 472" class="cls-12" width="28.268" height="3.822" rx="1.911" transform="translate(9.893 72.711)"/>
+      <rect id="Rectangle_473" data-name="Rectangle 473" class="cls-12" width="18.495" height="3.822" rx="1.911" transform="translate(113.248 72.711)"/>
+      <rect id="Rectangle_474" data-name="Rectangle 474" class="cls-13" width="18.495" height="3.822" rx="1.911" transform="translate(91.337 72.711)"/>
+      <use id="Rectangle_475" data-name="Rectangle 475" class="cls-2" transform="translate(8.183 80.025)" xlink:href="#image"/>
+      <rect id="Rectangle_476" data-name="Rectangle 476" class="cls-3" width="119.458" height="26.541" rx="6.48" transform="translate(13.638 84.287)"/>
+      <rect id="Rectangle_477" data-name="Rectangle 477" class="cls-4" width="23.995" height="2.783" rx="1.391" transform="translate(105.614 101.837)"/>
+      <rect id="Rectangle_478" data-name="Rectangle 478" class="cls-5" width="34.637" height="3.415" rx="1.708" transform="translate(19.776 90.491)"/>
+      <rect id="Rectangle_479" data-name="Rectangle 479" class="cls-6" width="57.559" height="3.415" rx="1.708" transform="translate(19.776 95.848)"/>
+      <rect id="Rectangle_480" data-name="Rectangle 480" class="cls-7" width="25.403" height="3.415" rx="1.708" transform="translate(19.776 101.204)"/>
+      <rect id="Rectangle_481" data-name="Rectangle 481" class="cls-14" width="16.152" height="6.985" rx="3.492" transform="translate(113.248 87.664)"/>
+      <use id="Rectangle_482" data-name="Rectangle 482" class="cls-2" transform="translate(8.183 111.923)" xlink:href="#image"/>
+      <rect id="Rectangle_483" data-name="Rectangle 483" class="cls-3" width="119.458" height="26.541" rx="6.48" transform="translate(13.638 116.185)"/>
+      <rect id="Rectangle_484" data-name="Rectangle 484" class="cls-4" width="23.995" height="2.783" rx="1.391" transform="translate(105.614 133.735)"/>
+      <rect id="Rectangle_485" data-name="Rectangle 485" class="cls-5" width="34.637" height="3.415" rx="1.708" transform="translate(19.776 122.389)"/>
+      <rect id="Rectangle_486" data-name="Rectangle 486" class="cls-6" width="57.559" height="3.415" rx="1.708" transform="translate(19.776 127.746)"/>
+      <rect id="Rectangle_487" data-name="Rectangle 487" class="cls-7" width="25.403" height="3.415" rx="1.708" transform="translate(19.776 133.102)"/>
+      <rect id="Rectangle_488" data-name="Rectangle 488" class="cls-5" width="16.152" height="6.985" rx="3.492" transform="translate(113.248 119.562)"/>
+      <use id="Rectangle_489" data-name="Rectangle 489" class="cls-2" transform="translate(8.183 143.821)" xlink:href="#image"/>
+      <rect id="Rectangle_490" data-name="Rectangle 490" class="cls-3" width="119.458" height="26.541" rx="6.48" transform="translate(13.638 148.083)"/>
+      <rect id="Rectangle_491" data-name="Rectangle 491" class="cls-4" width="23.995" height="2.783" rx="1.391" transform="translate(105.614 165.633)"/>
+      <rect id="Rectangle_492" data-name="Rectangle 492" class="cls-5" width="34.637" height="3.415" rx="1.708" transform="translate(19.776 154.287)"/>
+      <rect id="Rectangle_493" data-name="Rectangle 493" class="cls-6" width="57.559" height="3.415" rx="1.708" transform="translate(19.776 159.644)"/>
+      <rect id="Rectangle_494" data-name="Rectangle 494" class="cls-7" width="25.403" height="3.415" rx="1.708" transform="translate(19.776 165)"/>
+      <rect id="Rectangle_495" data-name="Rectangle 495" class="cls-5" width="16.152" height="6.985" rx="3.492" transform="translate(113.248 151.46)"/>
+    </g>
+  </g>
+</svg>
