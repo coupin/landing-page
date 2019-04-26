@@ -112,6 +112,7 @@ a {
   .hero-title, .hero-sub-title {
     color: $o-bgColor--ffffff;
     text-align: left;
+    padding: 0 10px;
   }
 
   .hero-title {
@@ -131,8 +132,8 @@ a {
     font-family: "Maven Pro";
     line-height: 22px;
 
+    }
   }
-}
 
 .explore.section {
   .feature-highlights {
@@ -278,14 +279,8 @@ a {
 
 .app-buttons {
   a img {
-    height: 40px;
-
-    &.google {
-      height: 60px
-    }
-
-    &.apple {
-      margin: 10px;
-    }
+    width: auto;
+    height: 60px;
+    position: relative;
   }
 }
