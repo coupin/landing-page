@@ -33,7 +33,7 @@ a {
       text-align: center;
       position: relative;
 
-      &:not(.section.footer)::after {
+      &.underline::after {
         background: none repeat scroll 0 0 $o-fColor--F49A40 ;
         bottom: -10px;
         content: "";
@@ -74,6 +74,7 @@ a {
   background-size: cover;
   position: relative;
   padding-top: 0;
+  // @include angled-edge('inside bottom', 'lower left', white) ;
 
   .hero-overlay {
     background: $hero-gradient;
@@ -82,7 +83,6 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
     opacity: 0.95;
   }
 
@@ -91,6 +91,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   
     .brand {
       margin-left: 25px;
@@ -113,6 +114,7 @@ a {
     color: $o-bgColor--ffffff;
     text-align: left;
     padding: 0 10px;
+    position: relative;
   }
 
   .hero-title {
@@ -136,6 +138,10 @@ a {
   }
 
 .explore.section {
+  @supports not (clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 100%)) {
+    @include angled-edge('outside top', 'upper left', white, 200);
+  }
+
   .feature-highlights {
     display: flex;
     justify-content: space-evenly;
