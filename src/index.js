@@ -1,10 +1,11 @@
 // importing favicons
 import './favicons';
 
+import './images';
+
 // styles
 import './sass/main.scss';
 
-// import fontawesome
-import '@fortawesome/fontawesome-free/js/all.js';
-
+import './js/lazy-load';
 import './index.html';
+

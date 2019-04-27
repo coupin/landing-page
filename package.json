@@ -28,5 +28,9 @@
     "webpack-dev-middleware": "^3.6.2",
     "webpack-dev-server": "^3.3.1",
     "webpack-hot-middleware": "^2.24.3"
+  },
+  "dependencies": {
+    "angled-edges": "^2.0.0",
+    "yall-js": "^3.1.1"
   }
 }

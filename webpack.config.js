@@ -66,4 +66,10 @@ module.exports = {
     open: true,
     disableHostCheck: true,
   },
+  externals: [
+    {
+      "window": "window",
+      "document": "document",
+    }
+  ],
 };
