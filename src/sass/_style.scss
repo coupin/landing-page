@@ -67,14 +67,22 @@ a {
 
 .hero.section {
   height: 720px;
-  clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 100%);
-  background: url(../images/hero-image.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   position: relative;
   padding-top: 0;
   // @include angled-edge('inside bottom', 'lower left', white) ;
+
+  .image {
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 100%);
+    background: url(../images/hero-image.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   .hero-overlay {
     background: $hero-gradient;
@@ -113,7 +121,7 @@ a {
   .hero-title, .hero-sub-title {
     color: $o-bgColor--ffffff;
     text-align: left;
-    padding: 0 10px;
+    padding: 0 40px;
     position: relative;
   }
 
@@ -133,9 +141,28 @@ a {
     width: 397px;
     font-family: "Maven Pro";
     line-height: 22px;
+  }
 
+  .app-buttons {
+    margin-left: 30px;
+  }
+
+  .phone {
+    position: absolute;
+    top: -100px;
+    right: 150px;
+    z-index: 99999999;
+    
+    img {
+      height: 600px;
     }
   }
+
+  .container {
+    width: 65%;
+    padding-left: 100px;
+  }
+}
 
 .explore.section {
   @supports not (clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 100%)) {
@@ -281,6 +308,7 @@ a {
 .container {
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 
 .app-buttons {

@@ -1,6 +1,7 @@
 .features.section {
   background-color: rgba($o-fColor--18AD87, 0.07);
   margin-top: 80px;
+  padding-bottom: 80px;
   padding-top: 60px;
 
   .grid-container {
@@ -13,21 +14,76 @@
   .phone-area { 
     grid-area: phone-area; 
     min-height: 30px;
-    margin-bottom: 80px; 
+    // margin-bottom: 80px;
+
+    .screenshot-container {
+      position: relative;
+      width: 20rem;
+      height: 37.5rem;
+      background: url('../images/features_container_phone.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: auto;
+
+      .screenshot-content {
+        height: 471px;
+        position: relative;
+        top: 60px;
+        width: 266px;
+        left: 15px;
+
+        .screenshot {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background-size: cover;
+          opacity: 0;
+          transition: opacity 0.5s;
+
+          &.active {
+            opacity: 1;
+          }
+
+          &.preferences {
+            background-image: url('../images/feature_screens/user_preferences_screen.png');
+          }
+
+          &.rewards {
+            background-image: url('../images/feature_screens/rewards_screen.png');
+          }
+
+          &.profile {
+            background-image: url('../images/feature_screens/profile_screen.png');
+          }
+
+          &.filter {
+            background-image: url('../images/feature_screens/filter_screen.png');
+          }
+        }
+      }
+    }
   }
 
   .feature {
-    // min-height: 30px;
-    margin-bottom: 80px;
     display: flex;
-    // justify-content: space-around;
     align-items: center;
     width: 350px;
     height: 120px;
     background-color: $o-fColor--ffffff;
-    box-shadow: 0px 4px 17px rgba(84, 101, 126, 0.11);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
     padding: 0 25px;
     box-sizing: border-box;
+    align-self: center;
+    cursor: pointer;
+    transition: transform 0.5s, box-shadow 0.5s;
+    
+    &:hover, &.active {
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.09);
+      transform: scale(1.03);
+    }
 
     &-icon {
       margin-right: 25px;

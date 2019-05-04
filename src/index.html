@@ -31,7 +31,9 @@
 
   <!-- hero section -->
   <div class="hero section">
-    <div class="hero-overlay"></div>
+    <div class="image">
+      <div class="hero-overlay"></div>
+    </div>
     <header>
       <div class="brand">
           <svg width="107.664" height="27.335" viewBox="0 0 107.664 27.335">
@@ -88,6 +90,10 @@
         <a href="#">
           <img data-src="images/google-play-fs8.png" alt="Get it on Google Play" class="lazy">
         </a>
+      </div>
+
+      <div class="phone">
+        <img data-src="images/phone-screen.png" alt="phone screen" class="lazy">
       </div>
     </div>
   </div>
@@ -349,7 +355,7 @@
       </p>
     </div>
   </div>
-  <div class="section features">
+  <div class="section features" id="features">
     <div class="section-title">
       <p class="underline">We make exploring new deals easy</p>     
     </div>
@@ -357,9 +363,18 @@
       <div class="container">
         <div class="grid-container">
           <div class="phone-area">
-            
+            <div class="screenshot-container">
+              <div class="screenshot-content">
+                <div class="screenshot preferences" data-position="1"></div>
+                <div class="screenshot rewards" data-position="2"></div>
+                <div class="screenshot" data-position="3"></div> <!-- dont know what screen yet -->
+                <div class="screenshot filter" data-position="4"></div>
+                <div class="screenshot" data-position="5"></div> <!-- dont know what screen yet -->
+                <div class="screenshot profile" data-position="6"></div>
+              </div>
+            </div>
           </div>
-          <div class="feature-1 feature align-right">
+          <div class="feature-1 feature align-right" data-position="1">
             <div class="feature-icon">
               <object type="image/svg+xml" data="images/Group 1931.svg">
                 Your browser does not support SVGs
@@ -374,7 +389,7 @@
               </div>
             </div>
           </div>
-          <div class="feature-2 feature align-right">
+          <div class="feature-2 feature align-right" data-position="2">
             <div class="feature-icon">
               <object type="image/svg+xml" data="images/Group 2004.svg">
                 Your browser does not support SVGs
@@ -389,7 +404,7 @@
               </div>
             </div>
           </div>
-          <div class="feature-3 feature align-right">
+          <div class="feature-3 feature align-right" data-position="3">
             <div class="feature-icon">
               <object type="image/svg+xml" data="images/Group 1954.svg">
                 Your browser does not support SVGs
@@ -404,7 +419,7 @@
               </div>
             </div>
           </div>
-          <div class="feature-4 feature">
+          <div class="feature-4 feature" data-position="4">
             <div class="feature-icon">
               <object type="image/svg+xml" data="images/Group 1982.svg">
                 Your browser does not support SVGs
@@ -419,7 +434,7 @@
               </div>
             </div>
           </div>
-          <div class="feature-5 feature">
+          <div class="feature-5 feature" data-position="5">
             <div class="feature-icon">
               <object type="image/svg+xml" data="images/Group 1982.svg">
                 Your browser does not support SVGs
@@ -434,7 +449,7 @@
               </div>
             </div>
           </div>
-          <div class="feature-6 feature">
+          <div class="feature-6 feature" data-position="6">
             <div class="feature-icon">
               <object type="image/svg+xml" data="images/Group 1973.svg">
                 Your browser does not support SVGs
@@ -485,7 +500,7 @@
       </p>
     </div>
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha256-XJuslujM3cGzRZGiSi/KNSdk58uORO/mmrEQNjVtb5k=" crossorigin="anonymous"></script>
 </body>
 
 </html>
