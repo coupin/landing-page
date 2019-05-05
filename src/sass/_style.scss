@@ -27,7 +27,7 @@ a {
     justify-content: center;
 
     p {
-      font-size: 30px;
+      font-size: $o-fSize--30;
       font-family: 'Montserrat';
       font-weight: bold;
       text-align: center;
@@ -53,7 +53,7 @@ a {
 
     p {
       font-weight: normal;
-      font-size: 18px;
+      font-size: $o-fSize--18;
       text-align: center;
       color: #454242;
 
@@ -111,7 +111,7 @@ a {
   
       a, span {
         color: $o-bgColor--ffffff;
-        font-size: 14px;
+        font-size: $o-fSize--14;
         font-weight: 500;
         margin-left: 30px;
       }
@@ -126,21 +126,21 @@ a {
   }
 
   .hero-title {
-    font-size: 40px;
+    font-size: $o-fSize--40;
     font-family: Montserrat;
     font-weight: bold;
-    line-height: 50px;
+    line-height: rem(50px);
     width: 432px;
     margin-bottom: 30px;
     margin-top: 145px;
   }
 
   .hero-sub-title {
-    font-size: 16px;
+    font-size: $o-fSize--16;
     font-weight: 400;
     width: 397px;
     font-family: "Maven Pro";
-    line-height: 22px;
+    line-height: rem(22px);
   }
 
   .app-buttons {
@@ -152,10 +152,11 @@ a {
     top: -100px;
     right: 150px;
     z-index: 99999999;
-    
-    img {
-      height: 600px;
-    }
+    height: 600px;
+    width: 224px;
+    background-image: url('../images/phone-screen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .container {
@@ -186,7 +187,7 @@ a {
     justify-content: center;
   }
 
-  .higlight-title {
+  .highlight-title {
     font-family: Montserrat;
     font-weight: bold;
     font-size: $o-fSize--20;
@@ -215,7 +216,7 @@ a {
         height: 50px;
         background-color: $o-fColor--F49A40;
         color: $o-bgColor--ffffff;
-        font-size: 18px;
+        font-size: $o-fSize--18;
         font-weight: 400;
         border-radius: 50px;
         font-family: 'Maven Pro';
@@ -233,7 +234,7 @@ a {
 
 
     p {
-      font-size: 18px;
+      font-size: $o-fSize--18;
       text-align: center;
     }
   }
@@ -272,7 +273,7 @@ a {
         margin-left: 20px;
       }
 
-      font-size: 16px;
+      font-size: $o-fSize--16;
       color: $o-fColor--1d1c1c;
 
       &:hover {
@@ -297,7 +298,7 @@ a {
   }
 
   .copyright {
-    font-size: 14px;
+    font-size: $o-fSize--14;
     line-height: 20px;
     color: $o-fColor--1d1c1c;
     width: 100%;
@@ -317,4 +318,166 @@ a {
     height: 60px;
     position: relative;
   }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  html {
+    font-size: 75%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .section:not(.hero.section) {
+    margin-top: 50px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .hero.section {
+    height: 320px;
+    background-color: #fafafa;
+
+    .image {
+      clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 96%);
+    }
+
+    header nav {
+      a, span {
+        font-weight: 600;
+        margin-left: 10px;
+      }
+    }
+
+    .phone {
+      display: none;
+    }
+
+    .container {
+      width: 100% !important;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .hero-title, .hero-sub-title {
+      text-align: left;
+      padding: 0 0 0 20px;
+      position: relative;
+      width: 300px;
+    }
+
+    .hero-title {
+      margin-bottom: 15px;
+    }
+
+    .app-buttons {
+      margin-left: 10px;
+    }
+  }
+
+  .explore.section {
+    background-color: #fafafa;
+    padding-bottom: 50px;
+
+    @supports not (clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 100%)) {
+      @include angled-edge('outside top', 'upper left', #fafafa, 200);
+    }
+  
+    .feature-highlights {
+      display: block;
+      justify-content: space-evenly;
+  
+      .highlight {
+        margin: 0 30px 50px 30px;
+        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.075);
+        padding-bottom: 20px;
+        padding-top: 35px;
+        background-color: #fff;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-icon {
+          margin-bottom: 30px;
+        }
+
+        &-title {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .section-footer {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  html {
+    font-size: 70%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .hero.section {
+    height: 320px;
+
+    .image {
+      clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 96%);
+    }
+
+    header nav {
+      a, span {
+        font-weight: 600;
+        margin-left: 10px;
+      }
+    }
+
+    .phone {
+      // display: none;
+      height: rem(600px);
+      right: rem(150px);
+    }
+
+    .container {
+      width: 90%;
+      padding-left: 90px;
+    }
+
+    .hero-title, .hero-sub-title {
+      text-align: left;
+      padding: 0 0 0 20px;
+      position: relative;
+      width: 300px;
+    }
+
+    .hero-title {
+      margin-bottom: 15px;
+    }
+
+    .app-buttons {
+      margin-left: 10px;
+    }
+  }
+
+  .explore.section {
+    .feature-highlights .highlight {
+      &-icon {
+        margin-bottom: 10px;
+
+        svg {
+          height: rem(190px);
+        }
+      }
+    }
+  }
+}
+
+@media only screen  and (min-width : 1224px) {
 }

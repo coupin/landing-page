@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900|Montserrat:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
 @import "angled-edges";
+@import "sass-rem";
 
 @import 'variables';
 
 @import 'preloader';
 @import 'style';
 @import 'features';
+@import 'mobile';

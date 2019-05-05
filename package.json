@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "angled-edges": "^2.0.0",
+    "sass-rem": "^2.0.1",
     "yall-js": "^3.1.1"
   }
 }

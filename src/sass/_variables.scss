@@ -16,15 +16,17 @@ $o-fColor--F49A40 : #F49A40;
 $o-fColor--18AD87 : #18AD87;
 
 // font sizes
-$o-fSize--8 : 8px;
-$o-fSize--12 : 12px;
-$o-fSize--14 : 14px;
-$o-fSize--15 : 15px;
-$o-fSize--16 : 16px;
-$o-fSize--18 : 18px;
-$o-fSize--20 : 20px;
-$o-fSize--24 : 24px;
-$o-fSize--28 : 28px;
-$o-fSize--30 : 30px;
-$o-fSize--40 : 40px;
+$o-fSize--8 : rem(8px);
+$o-fSize--12 : rem(12px);
+$o-fSize--14 : rem(14px);
+$o-fSize--15 : rem(15px);
+$o-fSize--16 : rem(16px);
+$o-fSize--18 : rem(18px);
+$o-fSize--20 : rem(20px);
+$o-fSize--24 : rem(24px);
+$o-fSize--28 : rem(28px);
+$o-fSize--30 : rem(30px);
+$o-fSize--40 : rem(40px);
 $o-fFamily : "Montserrat","Maven Pro","Arial"
+
+
