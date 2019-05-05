@@ -13,21 +13,68 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#18AD87">
   <title>Coupin</title>
+  <style>
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.3s;
+    }
+    #preloader.hide {
+      opacity: 0;
+    }
+    #preloader .preload-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #f49a40;
+      position: relative;
+      border-radius: 20px;
+    }
+    #preloader .preload-icon .outer_circle {
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background-color: #f49a40;
+      opacity: 0.2;
+      border-radius: 40px;
+      animation: pulse 4s infinite;
+    }
+    #preloader .preload-icon .arrow {
+      height: 15px;
+      width: 15px;
+      position: absolute;
+      top: 13px;
+      right: 12px;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- preload section -->
-  <!-- <div id="preloader">
+  <div id="preloader">
     <div class="preload-icon">
-        <svg width="63.16" height="63.16" viewBox="0 0 63.16 63.16">
-          <g id="location_pointer" data-name="location pointer" transform="translate(-90.724 -90.22)">
-            <path id="outer_circle" class="outer_circle" d="M208.27,238.87a31.58,31.58,0,1,0-31.58-31.58A31.58,31.58,0,0,0,208.27,238.87Z" transform="translate(-85.966 -85.49)"/>
-            <path id="position_circle" class="position_circle" d="M199.851,214.736a16.313,16.313,0,1,0-16.291-16.291A16.313,16.313,0,0,0,199.851,214.736Z" transform="translate(-77.548 -77.646)"/>
-            <path id="arrow" class="arrow" d="M199.8,190.234l-10.66-3.049a.8.8,0,0,0-.979.979l3.027,10.66a.779.779,0,0,0,1.447,0l2.225-5.03,5.03-2.225a.8.8,0,0,0-.089-1.335Z" transform="translate(-71.938 -71.46)"/>
-          </g>
-        </svg>
+      <div class="outer_circle"></div>
+      <img src="images/arrow.png" alt="arrow" class="arrow">
     </div>
-  </div> -->
+  </div>
 
   <!-- hero section -->
   <div class="hero section">

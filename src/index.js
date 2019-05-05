@@ -7,6 +7,7 @@ import './images/';
 import './sass/global.scss';
 import './sass/main.scss';
 
+import './js/preload';
 import './js/lazy-load';
 
 import feature from './js/feature';
