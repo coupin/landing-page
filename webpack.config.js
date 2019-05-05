@@ -1,7 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const autoprefixer = require("autoprefixer");
+const postcssimport = require("postcss-import");
+const postcsspresetenv = require("postcss-preset-env");
+const cssnano = require("cssnano");
 
 module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
@@ -19,7 +24,12 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader'],
+        loaders: [{
+          loader: MiniCssExtractPlugin.loader,
+          options: {
+            hmr: process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'staging',
+          }
+        }, 'css-loader', "postcss-loader", 'sass-loader'],
       },
       {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
@@ -55,6 +65,20 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({}),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+          postcss: [
+            autoprefixer(),
+            postcssimport(),
+            postcsspresetenv(),
+            cssnano(),
+          ]
+      }
+  })
   ],
   stats: {
     colors: true
@@ -63,7 +87,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'src'),
     hot: true,
-    open: true,
+    // open: true,
     disableHostCheck: true,
   },
   externals: [
@@ -72,4 +96,7 @@ module.exports = {
       "document": "document",
     }
   ],
+  // optimization: {
+    // minimizer: [new OptimizeCSSAssetsPlugin({})],
+  // },
 };

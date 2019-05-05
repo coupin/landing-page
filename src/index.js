@@ -4,6 +4,7 @@ import './favicons';
 import './images/';
 
 // styles
+import './sass/global.scss';
 import './sass/main.scss';
 
 import './js/lazy-load';
