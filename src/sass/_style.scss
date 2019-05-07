@@ -363,6 +363,10 @@
   }
 }
 
+.show-mobile {
+  display: none;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
   html {
     font-size: 75%;
@@ -370,6 +374,10 @@
 
   .hide-mobile {
     display: none;
+  }
+
+  .show-mobile {
+    display: block;
   }
 
   .section:not(.hero.section) {
@@ -381,7 +389,7 @@
   }
 
   .hero.section {
-    height: 320px;
+    min-height: 320px;
     background-color: #fafafa;
 
     .image {
@@ -397,6 +405,12 @@
 
     .phone {
       display: none;
+      // position: relative;
+      // height: rem(350px);
+      // top: 10px;
+      // right: 0;
+      // margin: 0 auto;
+      // width: rem(150px);
     }
 
     .container {
@@ -438,6 +452,8 @@
         box-shadow: 0 7px 20px rgba(0, 0, 0, 0.075);
         padding-bottom: 20px;
         padding-top: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
         background-color: #fff;
         width: 80%;
         margin-left: auto;

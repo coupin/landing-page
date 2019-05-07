@@ -55,12 +55,20 @@
             background-image: url('../images/feature_screens/rewards_screen.png');
           }
 
+          &.hotlist {
+            background-image: url('../images/feature_screens/hot_list_screen.png');
+          }
+
           &.profile {
             background-image: url('../images/feature_screens/profile_screen.png');
           }
 
           &.filter {
             background-image: url('../images/feature_screens/filter_screen.png');
+          }
+
+          &.coupin {
+            background-image: url('../images/feature_screens/coupin_screen.png');
           }
         }
       }
