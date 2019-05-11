@@ -9,6 +9,7 @@ const postcsspresetenv = require("postcss-preset-env");
 const cssnano = require("cssnano");
 
 module.exports = {
+  mode: process.env.NODE_ENV || 'development',
   entry: path.join(__dirname, 'src/index.js'),
   output: {
     path: path.join(__dirname, 'dist'),
@@ -17,9 +18,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js/,
-        exclude: /node_modules/,
-        loaders: ['babel-loader'],
+        test: /\.js|.mjs/,
+        // exclude: /node_modules/,
+        loaders: [{
+          loader: 'babel-loader',
+          options: {
+            // presets: ["@babel/preset-env"]
+          }
+        }],
       },
       {
         test: /\.scss$/,
@@ -78,7 +84,7 @@ module.exports = {
             cssnano(),
           ]
       }
-  })
+    })
   ],
   stats: {
     colors: true
@@ -95,8 +101,5 @@ module.exports = {
       "window": "window",
       "document": "document",
     }
-  ],
-  // optimization: {
-    // minimizer: [new OptimizeCSSAssetsPlugin({})],
-  // },
+  ]
 };

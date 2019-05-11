@@ -14,5 +14,9 @@ import feature from './js/feature';
 
 feature.start();
 
+window._scrollTo = function (id) {
+  document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+};
+
 import './index.html';
 

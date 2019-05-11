@@ -42,11 +42,11 @@ const u = (function () {
   const setActiveElement = function (element, position) {
     const imageElement = document.querySelector(`.screenshot[data-position="${position}"]`)
 
-    document.querySelectorAll('.screenshot').forEach((g) => {
+    document.querySelectorAll('.screenshot').forEach(function (g) {
       g.classList.remove('active');
     });
     
-    document.querySelectorAll('.feature').forEach((g) => {
+    document.querySelectorAll('.feature').forEach(function(g) {
       g.classList.remove('active');
     });
     

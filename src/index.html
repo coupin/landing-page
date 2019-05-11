@@ -116,8 +116,8 @@
         <!-- <img src="images/brand-logo.svg" alt="Brand logo"> -->
       </div>
       <nav>
-        <a href="#">Explore</a>
-        <a href="#">Contact</a>
+        <a onclick="_scrollTo('#features')">Explore</a>
+        <a href="mailto:okoronkwo@outlook.com">Contact</a>
         <span class="hide-mobile">|</span>
         <a href="#"  class="hide-mobile">Merchants</a>
       </nav>
@@ -394,7 +394,7 @@
     </div>
     <div class="section-footer">
       <div class="call-to-action__container">
-        <button class="call-to-action">
+        <button class="call-to-action" onclick="_scrollTo('#footer')">
           Download now
         </button>
       </div>
@@ -450,7 +450,7 @@
                 Explore rewards
               </div>
               <div class="feature-details__rider">
-                Discover new and exciting promotions arround new 
+                Discover new and exciting promotions around you
               </div>
             </div>
           </div>
@@ -603,7 +603,7 @@
   </div>
 
   <!-- Footer -->
-  <div class="section footer">
+  <div class="section footer" id="footer">
     <div class="section-title">
       <p>Start Finding Deals & Rewards Around You</p>     
     </div>
@@ -622,7 +622,7 @@
       <img data-src="images/logo.svg" alt="Coupin logo" class="footer-logo lazy">
       <div class="links">
         <a href="#">About</a>
-        <a href="#">Contact Us</a>
+        <a href="mailto:okoronkwo@outlook.com">Contact Us</a>
         <a href="#">Terms</a>
       </div>
       <div class="social">
@@ -635,6 +635,10 @@
       </p>
     </div>
   </div>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6%2Ces5%2CIntersectionObserver"></script>
+  <script src="https://cdn.jsdelivr.net/npm/yall-js@3.1.1/dist/yall.min.js" integrity="sha256-x2ozZDdYchsGagBnqUbKpNJ2XcD91OmzuiI7R7uQafE=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" integrity="sha256-Geq3csjLKRnRTVY3dLJJkZ9JiSlfVM9kRDRwyZZJMcQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha256-XJuslujM3cGzRZGiSi/KNSdk58uORO/mmrEQNjVtb5k=" crossorigin="anonymous"></script>
 </body>
 

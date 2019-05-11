@@ -52,11 +52,12 @@
           }
 
           &.rewards {
-            background-image: url('../images/feature_screens/rewards_screen.png');
+            // background-image: url('../images/feature_screens/rewards_screen.png');
+            background-image: url('../images/feature_screens/home_screen.png');
           }
 
           &.hotlist {
-            background-image: url('../images/feature_screens/hot_list_screen.png');
+            background-image: url('../images/feature_screens/hot_list_alt_screen.png');
           }
 
           &.profile {
