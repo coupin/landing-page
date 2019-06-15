@@ -381,7 +381,8 @@
   }
 
   .section:not(.hero.section) {
-    margin-top: 50px;
+    margin-top: 20px;
+    padding-top: 0;
   }
 
   .container {
@@ -437,7 +438,7 @@
 
   .explore.section {
     background-color: #fafafa;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
     @supports not (clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 100%)) {
       @include angled-edge('outside top', 'upper left', #fafafa, 200);
