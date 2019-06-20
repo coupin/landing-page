@@ -1,6 +1,8 @@
 module.exports = {
   plugins: {
-    "autoprefixer": {},
+    "autoprefixer": {
+      "grid": true
+    },
     'postcss-import': {},
     'postcss-preset-env': {},
     'cssnano': {}

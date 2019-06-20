@@ -240,7 +240,11 @@
     height: 250px;
     box-sizing: border-box;
     scroll-snap-type: x mandatory;
+    -ms-scroll-snap-type: mandatory;
     scroll-snap-points-x: repeat(300px);
+    -ms-scroll-snap-points-x: snapInterval(0px, 12%);
+    -ms-overflow-style: none;
+    -moz-overflow-style: none;
 
     .testimonial {
       flex: 0 0 auto;
