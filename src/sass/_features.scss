@@ -1,0 +1,222 @@
+.features.section {
+  background-color: rgba($o-fColor--18AD87, 0.07);
+  margin-top: 80px;
+  padding-bottom: 80px;
+  padding-top: 60px;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "feature-1 phone-area feature-4" "feature-2 phone-area feature-5" "feature-3 phone-area feature-6";
+  }
+  
+  .phone-area { 
+    grid-area: phone-area;
+    min-height: 30px;
+    // margin-bottom: 80px;
+
+    .screenshot-container {
+      position: relative;
+      width: rem(320px);
+      height: rem(600px);
+      background: url('../images/features_container_phone.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: auto;
+
+      .screenshot-content {
+        height: rem(471px);
+        position: relative;
+        top: rem(60px);
+        width: rem(266px);
+        left: rem(15px);
+
+        .screenshot {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background-size: cover;
+          opacity: 0;
+          transition: opacity 0.5s;
+
+          &.active {
+            opacity: 1;
+          }
+
+          &.preferences {
+            background-image: url('../images/feature_screens/user_preferences_screen.png');
+          }
+
+          &.rewards {
+            // background-image: url('../images/feature_screens/rewards_screen.png');
+            background-image: url('../images/feature_screens/home_screen.png');
+          }
+
+          &.hotlist {
+            background-image: url('../images/feature_screens/hot_list_alt_screen.png');
+          }
+
+          &.profile {
+            background-image: url('../images/feature_screens/profile_screen.png');
+          }
+
+          &.filter {
+            background-image: url('../images/feature_screens/filter_screen.png');
+          }
+
+          &.coupin {
+            background-image: url('../images/feature_screens/coupin_screen.png');
+          }
+        }
+      }
+    }
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 120px;
+    background-color: $o-fColor--ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+    padding: 0 25px;
+    box-sizing: border-box;
+    align-self: center;
+    cursor: pointer;
+    transition: transform 0.5s, box-shadow 0.5s;
+    
+    &:hover, &.active {
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.09);
+      transform: scale(1.03);
+    }
+
+    &-icon {
+      margin-right: 25px;
+    }
+  }
+  
+  .feature-1 { 
+    grid-area: feature-1;
+  }
+  
+  .feature-2 { 
+    grid-area: feature-2;
+  }
+  
+  .feature-3 { 
+    grid-area: feature-3;
+  }
+  
+  .feature-4 { 
+    grid-area: feature-4;
+  }
+  
+  .feature-5 { 
+    grid-area: feature-5;
+  }
+  
+  .feature-6 { 
+    grid-area: feature-6;
+  }
+
+  .feature-details {
+    // width: 350px;
+    // height: 120px;
+    // background-color: $o-fColor--ffffff;
+    // box-shadow: 0px 4px 17px rgba(84, 101, 126, 0.11);
+    // padding: 25px 20px 10px 20px;
+    // box-sizing: border-box;
+
+
+    &__title {
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: $o-fSize--18;
+      color: $o-fColor--555252;
+      margin-bottom: 7px;
+    }
+
+    &__rider {
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: $o-fSize--16;
+      color: $o-fColor--555252;
+      // width: 75%;
+    }
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+  /* Styles */
+  .features.section {
+    margin-top: 0;
+    padding-top: 25px;
+
+    .grid-container {
+      display: block;
+    }
+
+    .phone-area {
+      margin-bottom: 20px;
+    }
+
+    .feature{
+      width: 300px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &:nth-child(-n + 4) {
+        .feature-icon {
+          transform: scaleX(-1);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .features.section {
+    margin-top: 0;
+    padding-top: 30px;
+
+    .feature{
+      width: 250px;
+      height: 90px;
+
+      &:not(:nth-child(-n + 4)) {
+        padding-right: 0;
+      }
+
+      &:nth-child(-n + 4) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen  and (min-device-width : 768px) {
+  /* Styles */
+
+  .feature {
+    &:nth-child(-n + 4) {
+      justify-self: end;
+      flex-direction: row-reverse;
+      text-align: right;
+
+      .feature-icon {
+        margin-left: 25px;
+        margin-right: 0;
+      }
+    }
+  }
+}
