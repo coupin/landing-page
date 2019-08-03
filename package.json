@@ -44,5 +44,10 @@
     "angled-edges": "^2.0.0",
     "sass-rem": "^2.0.1",
     "yall-js": "^3.1.1"
+  },
+  "resolutions": {
+    "lodash": "^4.17.13",
+    "lodash.template": "^4.5.0",
+    "lodash.mergewith": "^4.6.2"
   }
 }
