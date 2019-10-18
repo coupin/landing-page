@@ -2,27 +2,27 @@ import template from 'lodash.template';
 
 var testimonials = [
   {
-    avatar: 'images/testimonial-avatar/wale.jpg',
+    avatar: 'images/wale.jpg',
     name: 'Wale H',
     comment: 'Coupin is easy to use and has a quick and easy layout. I recommend this.',
   },
   {
-    avatar: 'images/testimonial-avatar/ada.jpg',
+    avatar: 'images/ada.jpg',
     name: 'Ada',
     comment: 'Very impressive app, with the fast lifestyle and hustle and bustle in Lagos, it\'s easy to miss out on great deals. Great concept and execution.',
   },
   {
-    avatar: 'images/testimonial-avatar/anthony.jpg',
+    avatar: 'images/anthony.jpg',
     name: 'Anthony',
     comment: 'Really useful app, now I can have access to my favourite deals on the go!',
   },
   {
-    avatar: 'images/testimonial-avatar/mike.jpg',
+    avatar: 'images/mike.jpg',
     name: 'Mike',
     comment: 'Fun to use and straight to the point. I get notifications of deals when I want them.',
   },
   {
-    avatar: 'images/testimonial-avatar/alex.jpg',
+    avatar: 'images/alex.jpg',
     name: 'Alex',
     comment: 'A trusted app in finding just the right deals. I\'ll defintely recommend it to anyone.',
   }
