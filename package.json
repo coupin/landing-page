@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "angled-edges": "^2.0.0",
+    "lodash.template": "^4.5.0",
     "sass-rem": "^2.0.1",
     "yall-js": "^3.1.1"
   },
