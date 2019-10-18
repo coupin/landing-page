@@ -249,7 +249,8 @@
 
     .testimonial {
       width: 320px;
-      background: #fdfdfd;
+      background: #fff;
+      // background: #fefefe;
       box-sizing: border-box;
       box-shadow: 0 0.1875rem 0.375rem 0 rgba(173, 173, 173, 0.28);
       scroll-snap-align: center;
@@ -270,7 +271,6 @@
       .avatar {
         height: 50px;
         width: 50px;
-        background-color: #fef3fe;
         border-radius: 25px;
       }
 
