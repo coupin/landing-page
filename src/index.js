@@ -10,7 +10,7 @@ import './sass/main.scss';
 import './js/preload';
 import './js/lazy-load';
 
-import './js/testimonials';
+// import './js/testimonials';
 
 import feature from './js/feature';
 
