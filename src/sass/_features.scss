@@ -18,7 +18,7 @@
 
     .screenshot-container {
       position: relative;
-      width: rem(320px);
+      width: rem(300px);
       height: rem(600px);
       background: url('../images/features_container_phone.png');
       background-size: contain;
@@ -190,11 +190,11 @@
     padding-top: 30px;
 
     .feature{
-      width: 250px;
-      height: 90px;
+      width: 240px;
+      height: 95px;
 
       &:not(:nth-child(-n + 4)) {
-        padding-right: 0;
+        // padding-right: 0;
       }
 
       &:nth-child(-n + 4) {
