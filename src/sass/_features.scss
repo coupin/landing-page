@@ -16,7 +16,7 @@
     min-height: 30px;
     // margin-bottom: 80px;
 
-    .screenshot-container {
+    .screenshot-container.lazy-bg-loaded {
       position: relative;
       width: rem(300px);
       height: rem(600px);
@@ -47,28 +47,28 @@
             opacity: 1;
           }
 
-          &.preferences {
+          &.preferences.lazy-bg-loaded {
             background-image: url('../images/feature_screens/user_preferences_screen.png');
           }
 
-          &.rewards {
+          &.rewards.lazy-bg-loaded {
             // background-image: url('../images/feature_screens/rewards_screen.png');
             background-image: url('../images/feature_screens/home_screen.png');
           }
 
-          &.hotlist {
+          &.hotlist.lazy-bg-loaded {
             background-image: url('../images/feature_screens/hot_list_alt_screen.png');
           }
 
-          &.profile {
+          &.profile.lazy-bg-loaded {
             background-image: url('../images/feature_screens/profile_screen.png');
           }
 
-          &.filter {
+          &.filter.lazy-bg-loaded {
             background-image: url('../images/feature_screens/filter_screen.png');
           }
 
-          &.coupin {
+          &.coupin.lazy-bg-loaded {
             background-image: url('../images/feature_screens/coupin_screen.png');
           }
         }
