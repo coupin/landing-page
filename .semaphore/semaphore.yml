@@ -5,15 +5,6 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Build
-    task:
-      jobs:
-        - name: Build
-          commands:
-            - yarn
-            - cache restore
-            - yarn build
-            - cache store
   - name: Deploy
     task:
       env_vars:
@@ -28,7 +19,8 @@ blocks:
       jobs:
         - name: Deploy
           commands:
-            - cache restore
+            - yarn
+            - yarn build
             - cd dist
             - >-
               lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST; set
