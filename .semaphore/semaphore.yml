@@ -1,0 +1,35 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Build
+    task:
+      jobs:
+        - name: Build
+          commands:
+            - yarn
+            - cache restore
+            - yarn build
+            - cache store
+  - name: Deploy
+    task:
+      env_vars:
+        - name: FTP_USER
+          value: deploy@coupinapp.com
+        - name: FTP_PASSWORD
+          value: XI8v6!1!6@iU
+        - name: FTP_HOST
+          value: ftp.coupinapp.com
+        - name: FTP_PATH
+          value: /
+      jobs:
+        - name: Deploy
+          commands:
+            - cache restore
+            - cd dist
+            - >-
+              lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST; set
+              ssl:verify-certificate no; mirror -R ./ $FTP_PATH"
