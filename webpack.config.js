@@ -66,8 +66,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Custom template',
+      title: 'Home',
+      file: 'index.html',
       template: path.join(__dirname, 'src/index.html')
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Terms & Conditions',
+      filename: 'terms.html',
+      template: path.join(__dirname, 'src/terms.html')
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({}),

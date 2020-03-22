@@ -78,30 +78,6 @@
     opacity: 0.55;
   }
 
-  header {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  
-    .brand {
-      margin-left: 25px;
-    }
-  
-    nav {
-      display: inline-block;
-      margin-right: 25px;
-  
-      a, span {
-        color: $o-bgColor--ffffff;
-        font-size: $o-fSize--14;
-        font-weight: 500;
-        margin-left: 30px;
-      }
-    }
-  }
-
   .hero-title, .hero-sub-title {
     color: $o-bgColor--ffffff;
     text-align: left;

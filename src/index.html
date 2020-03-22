@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>CoupinApp - Get the best Deals and Rewards near you</title>
+  <title>CoupinApp - Home - Get the best Deals and Rewards near you</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,6 +24,17 @@
     gtag('js', new Date());
 
     gtag('config', 'G-1BYHHG39ET');
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var hasPreloaded = this.window.sessionStorage.getItem('hasPreloaded');
+      if (!hasPreloaded) {
+        document.querySelector('#preloader').classList.remove('hide');
+        this.window.sessionStorage.setItem('hasPreloaded', true);
+      } else {
+        document.querySelector('#preloader').classList.add('hide');
+      }
+    });
   </script>
   <style>
     #preloader {
@@ -94,7 +105,7 @@
     <div class="image">
       <div class="hero-overlay"></div>
     </div>
-    <header>
+    <header class="nav">
       <div class="brand">
           <svg width="107.664" height="27.335" viewBox="0 0 107.664 27.335">
             <defs>
@@ -550,17 +561,6 @@
     <div class="section-rider">
       <p>Download The App Now!</p>     
     </div>
-    <!-- <div class="app-buttons"> -->
-      <!-- <a href="#" target="_blank" rel="noreferrer">
-        <img data-src="images/ios-app-store-fs8.png" alt="Download on the App Store" class="lazy">
-      </a> -->
-      <!-- <a href="https://play.google.com/store/apps/details?id=com.kibou.abisoyeoke_lawal.coupinapp" target="_blank" rel="noreferrer">
-        <img data-src="images/google-play-fs8.png" alt="Get it on Google Play" class="lazy">
-      </a>
-      <a target="_blank" rel="noreferrer">
-        <img src="images/coming-soon-ios.png" alt="Coming soon to the App Store" class="lazy" style="height: 39px; top: -11px;">
-      </a> -->
-    <!-- </div> -->
     <div class="app-buttons">
       <a href="https://play.google.com/store/apps/details?id=com.kibou.abisoyeoke_lawal.coupinapp" target="_blank" rel="noreferrer">
         <img src="images/google-play.png" alt="Get it on Google Play">
@@ -572,9 +572,9 @@
     <div class="information-section">
       <img data-src="images/logo-rights.svg" alt="Coupin logo" class="footer-logo lazy">
       <div class="links">
-        <!-- <a href="#">About</a> -->
+        <a href="/">Home</a>
         <a href="mailto:care@coupinapp.com">Contact Us</a>
-        <!-- <a href="#">Terms</a> -->
+        <a href="/terms.html">Terms</a>
       </div>
       <div class="social">
         <a href="https://www.facebook.com/coupinapp" target="_blank" rel="noreferrer"><img class="lazy" data-src="images/facebook icon.svg" alt="Follow us on Facebook"></a>
