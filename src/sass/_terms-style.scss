@@ -1,0 +1,103 @@
+// Terms page
+div.terms-header {
+  background: url(../images/hero-image.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .overlay {
+    background: linear-gradient(#18ad87,rgba(27,174,134,.89) 89.02%,rgba(73,181,155,.92));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.55;
+  }
+
+  .terms-title p {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+  }
+}
+
+header.nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .brand {
+    margin-left: 25px;
+  }
+
+  nav {
+    display: inline-block;
+    margin-right: 25px;
+
+    a, span {
+      color: $o-bgColor--ffffff;
+      font-size: $o-fSize--14;
+      font-weight: 500;
+      margin-left: 30px;
+    }
+  }
+
+  @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    nav a, nav span {
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+
+  @media only screen and (min-width : 320px) and (max-width : 767px) {
+    nav a, nav span {
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+}
+
+.terms-container {
+  width: 60%;
+  margin: 0 auto;
+
+  @media only screen and (min-width : 320px) and (max-width : 767px) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    width: 80%;
+  }
+}
+
+.terms-content-body {
+  ol {
+    padding-left: 20px;
+
+    li {
+      text-transform: capitalize;
+      text-align: justify;
+    }
+  }
+
+  p, ol li, ul li {
+    text-align: justify;
+    line-height: 1.4;
+  }
+
+  address p {
+    margin: 0;
+  }
+  
+  h3 {
+    margin: 25px 0 7px;
+  }
+}
+// end of terms page

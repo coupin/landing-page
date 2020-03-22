@@ -21,4 +21,5 @@ window._scrollTo = function (id) {
 };
 
 import './index.html';
+import './terms.html';
 
