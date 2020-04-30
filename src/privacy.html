@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CoupinApp - Privacy - Get the best Deals and Rewards near you</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="The Coupin App brings all the best discounts, deals and rewards you love to within walking distance of your current location. We truly believe that every day with coupin is a gift!">
+  <meta name="keywords" content="coupin, coupinapp, app, coupon, deals, rewards, interests, deal">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-1.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-1-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-1-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="canonical" href="https://coupinapp.com">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#18AD87">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BYHHG39ET"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1BYHHG39ET');
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var hasPreloaded = this.window.sessionStorage.getItem('hasPreloaded');
+      if (!hasPreloaded) {
+        document.querySelector('#preloader').classList.remove('hide');
+        this.window.sessionStorage.setItem('hasPreloaded', true);
+      } else {
+        document.querySelector('#preloader').classList.add('hide');
+      }
+    });
+  </script>
+  <style>
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.3s;
+    }
+    #preloader.hide {
+      opacity: 0;
+      display: none;
+    }
+    #preloader .preload-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #f49a40;
+      position: relative;
+      border-radius: 20px;
+    }
+    #preloader .preload-icon .outer_circle {
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background-color: #f49a40;
+      opacity: 0.2;
+      border-radius: 40px;
+      animation: pulse 4s infinite;
+    }
+    #preloader .preload-icon .arrow {
+      height: 15px;
+      width: 15px;
+      position: absolute;
+      top: 13px;
+      right: 12px;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- preload section -->
+  <div id="preloader">
+    <div class="preload-icon">
+      <div class="outer_circle"></div>
+      <img src="images/arrow.png" alt="arrow" class="arrow">
+    </div>
+  </div>
+
+  <div class="terms-header">
+    <div class="overlay"></div>
+    <header class="nav terms-nav">
+      <div class="brand">
+        <a href="/">
+          <svg width="107.664" height="27.335" viewBox="0 0 107.664 27.335">
+            <defs>
+              <style>
+                .brand-logo {
+                  fill: #fafafa;
+                }
+          
+                .brand-text {
+                  fill: #fff;
+                  font-size: 22px;
+                  font-family: Ubuntu-Bold, Ubuntu, sans-serif;
+                  font-weight: 700;
+                }
+              </style>
+            </defs>
+            <g id="Logo" transform="translate(-26.336 -21)">
+              <g id="Asset_1logo" data-name="Asset 1logo">
+                <g id="Layer_1" data-name="Layer 1" transform="translate(26.336 21)">
+                  <path id="Path_274" data-name="Path 274" class="brand-logo" d="M30.37,31.774a10.087,10.087,0,0,1,1.815.465A9.7,9.7,0,0,1,36.035,34.7a11.171,11.171,0,0,1,2.756,4.552,11.679,11.679,0,0,1,.517,3.375,1.4,1.4,0,0,1-1.434,1.466l-8.607.172h-.791c-.126,0-.149-.028-.158-.158v-.163c-.042-1.922-.088-3.845-.126-5.772-.042-2.029-.074-4.064-.112-6.1v-.228c0-.074.042-.061.07-.037a.763.763,0,0,1,.154.121l2.053,1.908,3.035,2.835c.261.242.209.261.465-.037l.68-.8a.67.67,0,0,0-.228-.251c-1.28-1.178-2.565-2.327-3.845-3.519l-.251-.2C30.2,31.732,30.282,31.755,30.37,31.774Z" transform="translate(-15.011 -16.959)"/>
+                  <path id="Path_275" data-name="Path 275" class="brand-logo" d="M6.326,37.289c.242-.247.465-.465.675-.689.968-1.033,1.932-2.076,2.9-3.109.465-.465.931-.931,1.368-1.429a.6.6,0,0,1,.1-.088c.028-.028.093,0,.093.047v.265L11.7,44.02c0,.433.023.391-.363.312a16.184,16.184,0,0,1-3.556-1.178A13.215,13.215,0,0,1,1.76,37.568,13.191,13.191,0,0,1,.405,34.31,12.1,12.1,0,0,1,.07,32.425c0-.056,0-.107,0-.163A.134.134,0,0,1,.2,32.113H.456l8.7-.168c.112,0,.237-.07.335.042a.694.694,0,0,1-.2.251c-1.2,1.238-2.406,2.476-3.6,3.724-.344.354-.335.251,0,.61C5.874,36.786,6.089,37.024,6.326,37.289Z" transform="translate(-0.039 -17.047)"/>
+                  <path id="Path_276" data-name="Path 276" class="brand-logo" d="M35.789,9.908V9.764a2.36,2.36,0,0,0-.819-2.095,2.867,2.867,0,0,0-1.955-.708,6.27,6.27,0,0,0-1.657.251A8.621,8.621,0,0,0,28.1,8.9q-.209.168-.419.321a.06.06,0,0,1-.093-.051V8.945L27.42.566V.4c0-.163.023-.182.2-.191h.163L37.865-.02a3.724,3.724,0,0,1,.721,0c.358.056.465.149.507.493a2.825,2.825,0,0,1,.042.559c-.023.717-.042,1.429-.135,2.137a11.418,11.418,0,0,1-2.863,6.4A1.047,1.047,0,0,1,35.789,9.908Z" transform="translate(-14.658 0.038)"/>
+                  <path id="Path_277" data-name="Path 277" class="brand-logo" d="M5.764,13.732a.3.3,0,0,1-.219.047L.3,13.885c-.312,0-.3,0-.293-.307a17.39,17.39,0,0,1,.158-1.862A13.233,13.233,0,0,1,.732,9.179,12.2,12.2,0,0,1,3.06,5.116,14.281,14.281,0,0,1,8.147,1.3a10.208,10.208,0,0,1,1.8-.633A4.115,4.115,0,0,1,10.991.559c.107,0,.135.033.144.14a2.428,2.428,0,0,1,0,.261Q11.22,5.1,11.3,9.235V9.5a.061.061,0,0,1-.093.051c-.116-.079-.233-.163-.344-.251a10.5,10.5,0,0,0-1.6-1.089,7.261,7.261,0,0,0-2.583-.838,4.92,4.92,0,0,0-1.611,0,2.611,2.611,0,0,0-1.6.964A2.234,2.234,0,0,0,3,9.65a2.97,2.97,0,0,0,.293,1.373A5.977,5.977,0,0,0,4.386,12.54a8.811,8.811,0,0,0,1.038.931Z" transform="translate(-0.003 -0.281)"/>
+                  <path id="Path_278" data-name="Path 278" class="brand-logo" d="M14.6,22.8a5.455,5.455,0,0,1-4.506-2.327c-.126-.168-.237-.344-.344-.521a1.49,1.49,0,0,1-.2-.559.829.829,0,0,1,.465-.9,1.527,1.527,0,0,1,.833-.163,7.313,7.313,0,0,1,3.207.889,5.316,5.316,0,0,1,1.713,1.569,2.714,2.714,0,0,1,.2.34,1.131,1.131,0,0,1-.9,1.643,3.789,3.789,0,0,1-.47.028Z" transform="translate(-5.096 -9.779)"/>
+                  <path id="Path_279" data-name="Path 279" class="brand-logo" d="M29.865,22.832a1.908,1.908,0,0,1-.991-.168.894.894,0,0,1-.521-1.029,1.7,1.7,0,0,1,.186-.521,3.933,3.933,0,0,1,.642-.931,6.279,6.279,0,0,1,1.708-1.275,6.181,6.181,0,0,1,2.523-.684,1.773,1.773,0,0,1,.745.1.824.824,0,0,1,.563.805,1.564,1.564,0,0,1-.093.549,2.97,2.97,0,0,1-.633,1.071,6.2,6.2,0,0,1-3.491,2.02c-.107.023-.219.042-.326.056A2.336,2.336,0,0,1,29.865,22.832Z" transform="translate(-15.144 -9.721)"/>
+                </g>
+              </g>
+              <text id="Coupin" class="brand-text" transform="translate(61 43)"><tspan x="0" y="0">Coupin</tspan></text>
+            </g>
+          </svg>
+        <!-- <img src="images/brand-logo.svg" alt="Brand logo"> -->
+        </a>
+      </div>
+      <nav>
+        <a onclick="_scrollTo('#features')">Explore</a>
+        <a href="mailto:care@coupinapp.com">Contact</a>
+        <span>|</span>
+        <a href="https://dashboard.coupinapp.com/auth">Merchants</a>
+      </nav>
+    </header>
+    <div class="terms-title">
+      <p>Privacy Policy</p>
+    </div>
+  </div>
+
+  <div class="section terms">
+    <div class="terms-container">
+      <div class="terms-content-body">
+        <h5 style="margin-top: 5px;">PLEASE READ THIS PRIVACY POLICY CAREFULLY AS IT WILL HELP YOU MAKE INFORMED DECISIONS ABOUT SHARING YOUR PERSONAL INFORMATION WITH US.</h5>
+  
+        <h3 id="what-information-we-collect">WHAT INFORMATION DO WE COLLECT?</h3>
+
+        <h4>Personal information you disclose to us</h4>
+
+        <p style="margin: 10px 0;"><em><strong>In Short:</strong> We collect personal information that you provide to us.</em></p>
+  
+        <p>
+          We collect personal information that you voluntarily provide to us when registering at the Services or Apps, 
+          expressing an interest in obtaining information about us or our products and services, when participating in 
+          activities on the Services or Apps or otherwise contacting us.
+        </p>
+  
+        <p>
+          The personal information that we collect depends on the context of your interactions with us and the Services or 
+          Apps, the choices you make and the products and features you use. The personal information we collect can include 
+          the following:
+        </p>
+  
+        <p style="margin: 10px 0;">
+          <strong>Publicly Available Personal Information.</strong> We collect first name, last name, and nickname; 
+          current address; phone numbers; email addresses; business email; business phone number; and date of birth. 
+        </p>
+  
+        <p style="margin: 10px 0;">
+          <strong>Payment Data.</strong> We collect data necessary to process your payment if you make purchases, 
+          such as your payment instrument number (such as a credit card number), and the security code associated 
+          with your payment instrument. All payment data is stored by Paystack. You may find their privacy policy 
+          link(s) here: <a href="https://paystack.com/terms.">https://paystack.com/terms.</a>
+        </p>
+
+        <p style="margin: 10px 0;">
+          <strong>Social Media Login Data.</strong> We may provide you with the option to register using social 
+          media account details, like your Facebook, Twitter or other social media account. If you choose to 
+          register in this way, we will collect the Information described in the section called "HOW DO WE 
+          HANDLE YOUR SOCIAL LOGINS" below.
+        </p>
+
+        <p>
+          All personal information that you provide to us must be true, complete and accurate, and you must notify 
+          us of any changes to such personal information. you are solely responsible for the correctness of all 
+          data that you transmit or that relates to any activity you have undertaken using our Services platform. 
+          As such, you agree that we shall have no liability to you for the correctness of any such data, and you 
+          hereby waive any right of action against us arising therefrom 
+        </p>
+
+        <h4>Information collected through our Apps</h4>
+
+        <p><em><strong>In Short:</strong> We may collect information regarding your geo-location, push notifications, when you use our apps.</em></p>
+
+        <p>If you use our Apps, we may also collect the following information:</p>
+
+        <ul>
+          <li>
+            <em>Geo-Location Information.</em> We may request access or permission to and track location-based information from your 
+            mobile device, either continuously or while you are using our mobile application, to provide location-based 
+            services. If you wish to change our access or permissions, you may do so in your device's settings.
+          </li>
+          <li>
+            <em>Push Notifications.</em> We may request to send you push notifications regarding your account or the mobile application. 
+            If you wish to opt-out from receiving these types of communications, you may turn them off in your device's settings.
+          </li>
+        </ul>
+  
+        <h3 id="use-your-information">HOW DO WE USE YOUR INFORMATION?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong> We process your information for purposes based on legitimate business interests, 
+            the fulfilment of our contract with you, compliance with our legal obligations, and/or your consent
+          </em>
+        </p>
+  
+        <p>
+          We use personal information collected via our Services or Apps for a variety of business purposes described below. 
+          We process your personal information for these purposes in reliance on our legitimate business interests, in order 
+          to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations. 
+          We indicate the specific processing grounds we rely on next to each purpose listed below.
+        </p>
+  
+        <p style="margin: 10px 0;">
+          We use the information we collect or receive:
+        </p>
+
+        <ul>
+          <li>
+            <strong>To facilitate account creation and logon process.</strong> If you choose to link your account with us to a third party 
+            account (such as your Google or Facebook account), we use the information you allowed us to collect from those 
+            third parties to facilitate account creation and logon process for the performance of the contract. See the 
+            section below headed "HOW DO WE HANDLE YOUR SOCIAL LOGINS" for further information.
+          </li>
+          <li>
+            <strong>To send you marketing and promotional communications.</strong> We and/or our third-party marketing partners may use the 
+            personal information you send to us for our marketing purposes, if this is in accordance with your marketing 
+            preferences. You can opt-out of our marketing emails at any time (see the <a href="#your-privacy-rights">"WHAT ARE YOUR PRIVACY RIGHTS"</a> below).
+          </li>
+          <li>
+            <strong>To send administrative information to you.</strong> We may use your personal information to send you product, service 
+            and new feature information and/or information about changes to our terms, conditions, and policies.
+          </li>
+          <li>
+            <strong>To deliver services to the user.</strong> We may use your information to provide you with the requested service.
+          </li>
+          <li>
+            <strong>For other Business Purposes.</strong> We may use your information for other Business Purposes, such as data analysis, 
+            identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and 
+            improve our Services or Apps, products, marketing and your experience. We may use and store this information 
+            in aggregated and anonymized form so that it is not associated with individual end users and does not include 
+            personal information. We will not use identifiable personal information without your consent.
+          </li>
+        </ul>
+  
+        <h3 id="information-sharing">WILL YOUR INFORMATION BE SHARED WITH ANYONE?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong> We only share information with your consent, to comply with laws, 
+            to provide you with services, to protect your rights, or to fulfil business obligations.
+          </em>
+        </p>
+
+        <p style="margin-bottom: 10px">We may process or share data based on the following legal basis:</p>
+
+        <ul>
+          <li>
+            <strong>Consent:</strong> We may process your data if you have given us specific consent to use your 
+            personal information in a specific purpose.
+          </li>
+          <li>
+            <strong>Legitimate Interests:</strong> We may process your data when it is reasonably necessary to 
+            achieve our legitimate business interests.
+          </li>
+          <li>
+            <strong>Performance of a Contract:</strong> Where we have entered into a contract with you, we may 
+            process your personal information to fulfil the terms of our contract.
+          </li>
+          <li>
+            <strong>Legal Obligations:</strong> We may disclose your information where we are legally required 
+            to do so in order to comply with applicable law, governmental requests, a judicial 
+            proceeding, court order, or legal process, such as in response to a court order or a 
+            subpoena (including in response to public authorities to meet national security or 
+            law enforcement requirements).
+          </li>
+          <li>
+            <strong>Vital Interests:</strong> We may disclose your information where we believe it is necessary 
+            to investigate, prevent, or take action regarding potential violations of our policies, 
+            suspected fraud, situations involving potential threats to the safety of any person and 
+            illegal activities, or as evidence in litigation in which we are involved.
+          </li>
+        </ul>
+
+        <p style="margin: 10px 0;">
+          More specifically, we may need to process your data or share your personal information in the following situations:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Vendors, Consultants and Other Third-Party Service Providers.</strong> We may share your data with third 
+            party vendors, service providers, contractors or agents who perform services for us or on our behalf and 
+            require access to such information to do that work. Examples include: payment processing, data analysis, 
+            email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties 
+            to use tracking technology on the Services or Apps, which will enable them to collect data about how you interact 
+            with the Services or Apps over time. This information may be used to, among other things, analyze and track data, 
+            determine the popularity of certain content and better understand online activity. Unless described in this Policy, 
+            we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.
+          </li>
+          <li>
+            <strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during 
+            negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of 
+            our business to another company.
+          </li>
+          <li>
+            <strong>Third-Party Advertisers.</strong> We may use third-party advertising companies to serve ads when you 
+            visit the Services or Apps. These companies may use information about your visits to our Website(s) and 
+            other websites that are contained in web cookies and other tracking technologies in order to provide 
+            advertisements about goods and services of interest to you.
+          </li>
+          <li>
+            <strong>Business Partners.</strong> We may share your information with our business partners to offer you 
+            certain products, services or promotions.
+          </li>
+          <li>
+            <strong>Offer Wall.</strong> Our Apps may display a third-party hosted “offer wall.” Such an offer wall allows 
+            third-party advertisers to offer virtual currency, gifts, or other items to users in return for acceptance and 
+            completion of an advertisement offer. Such an offer wall may appear in our mobile application and be displayed 
+            to you based on certain data, such as your geographic area or demographic information. When you click on an offer 
+            wall, you will leave our mobile application. A unique identifier, such as your user ID, will be shared with the 
+            offer wall provider in order to prevent fraud and properly credit your account.
+          </li>
+        </ul>
+
+        <h3 id="cookies-and-tracking">DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong> We may use cookies and other tracking technologies to collect and store your information.
+          </em>
+        </p>
+
+        <p>
+          We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. 
+          Specific information about how we use such technologies and how you can refuse certain cookies is set out in our 
+          Cookie Policy.
+        </p>
+
+        <h3 id="google-maps">DO WE USE GOOGLE MAPS?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong> Yes, we use Google Maps for the purpose of providing better service.
+          </em>
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          This website, mobile application, or Facebook application uses Google Maps APIs. You may find the 
+          Google Maps APIs Terms of Service  <a href="#">here</a>. To better understand Google’s Privacy Policy, please refer 
+          to this <a href="#">link</a>.
+        </p>
+
+        <p>
+          By using our Maps API Implementation, you agree to be bound by Google’s Terms of Service. 
+          You agree to allow us to obtain or cache your location. You may revoke your consent at any 
+          time. We use information about location in conjunction with data from other data providers.
+        </p>
+
+        <h3 id="social-logins">HOW DO WE HANDLE YOUR SOCIAL LOGINS?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong>  If you choose to register or log in to our services 
+            using a social media account, we may have access to certain information about you.
+          </em>
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          Our Services or Apps offer you the ability to register and login using your 
+          third-party social media account details (like your Facebook or Twitter logins). 
+          Where you choose to do this, we will receive certain profile information about you 
+          from your social media provider. The profile Information we receive may vary 
+          depending on the social media provider concerned, but will often include your name, 
+          e-mail address, friends list, profile picture as well as other information you 
+          choose to make public.
+        </p>
+
+        <p>
+          We will use the information we receive only for the purposes that are described 
+          in this privacy policy or that are otherwise made clear to you on the Services 
+          or Apps. Please note that we do not control, and are not responsible for, other 
+          uses of your personal information by your third-party social media provider. We 
+          recommend that you review their privacy policy to understand how they collect, 
+          use and share your personal information, and how you can set your privacy 
+          preferences on their sites and apps.
+        </p>
+
+        <h3 id="information-storage-duration">HOW LONG DO WE KEEP YOUR INFORMATION?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong>  We keep your information for as long as necessary 
+            or in the minimum, to comply with applicable legislations in order to fulfil 
+            the purposes outlined in this privacy policy unless otherwise required by law.
+          </em>
+        </p>
+
+        <p style="margin-bottom: 10px">
+          We will only keep your personal information for as long as it is necessary for 
+          the purposes set out in this privacy policy, unless a longer retention period is 
+          required or permitted by law (such as tax, accounting or other legal requirements). 
+          No purpose in this policy will require us keeping your personal information for 
+          longer than 90 days past the termination of the user's account.
+        </p>
+
+        <p>
+          When we have no ongoing legitimate business need to process your personal information, 
+          we will either delete or anonymize it, or, if this is not possible (for example, 
+          because your personal information has been stored in backup archives), then we 
+          will securely store your personal information and isolate it from any further 
+          processing until deletion is possible.
+        </p>
+
+        <h3 id="information-security">HOW DO WE KEEP YOUR INFORMATION SAFE?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong> We aim to protect your personal information 
+            through a system of organizational and technical security measures.
+          </em>
+        </p>
+
+        <p>
+          We have implemented appropriate technical and organizational security measures 
+          designed to protect the security of any personal information we process and in 
+          line with the Nigeria Data Protection Regulations. However, please also remember 
+          that we cannot guarantee that the internet itself is 100% secure. Although we will 
+          do our best to protect your personal information, transmission of personal information 
+          to and from our Services or Apps is at your own risk. You should only access the 
+          services within a secure environment.
+        </p>
+
+        <h3 id="information-collection-for-minors">DO WE COLLECT INFORMATION FROM MINORS?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong> We do not knowingly collect data from or market to 
+            children under 18 years of age.
+          </em>
+        </p>
+
+        <p>
+          We do not knowingly solicit data from or market to children under 18 years of age. 
+          By using the Services or Apps, you represent that you are at least 18 or that you 
+          are the parent or guardian of such a minor and consent to such minor dependent’s 
+          use of the Services or Apps. If we learn that personal information from users less 
+          than 18 years of age has been collected, we will deactivate the account and take 
+          reasonable measures to promptly delete such data from our records. If you become 
+          aware of any data we have collected from children under age 18, please contact us 
+          at <a href="mailto:compliance@coupinapp.com">compliance@coupinapp.com</a>.
+        </p>
+
+        <h3 id="your-privacy-rights">WHAT ARE YOUR PRIVACY RIGHTS?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong>You may review, change, or terminate your account at any time.
+          </em>
+        </p>
+
+        <p>
+          If you are within Nigeria and you believe we are unlawfully processing your personal 
+          information, please contact us with your questions or comments about your violated 
+          privacy rights at <a href="mailto:compliance@coupinapp.com">compliance@coupinapp.com</a>.
+        </p>
+
+        <h4>Account Information</h4>
+
+        <p style="margin: 10px 0;">
+          If you would at any time like to review or change the information in your account 
+          or terminate your account, you can:
+        </p>
+
+        <ul>
+          <li>
+            Contact us using the contact information provided.
+          </li>
+        </ul>
+
+        <p style="margin: 10px 0;">
+          Upon your request to terminate your account, we will deactivate or delete your account 
+          and information from our active databases. However, some information may be retained in 
+          our files to prevent fraud, troubleshoot problems, assist with any investigations, 
+          enforce our Terms of Use and/or comply with legal requirements.
+        </p>
+
+        <p style="margin: 10px 0;">
+          <strong>Opting out of email marketing:</strong> You can unsubscribe from our marketing email list at 
+          any time by clicking on the unsubscribe link in the emails that we send or by contacting 
+          us using the details provided below. You will then be removed from the marketing email 
+          list – however, we will still need to send you service-related emails that are necessary 
+          for the administration and use of your account. To otherwise opt-out, you may:
+        </p>
+
+        <ul>
+          <li>Contact us using the contact information provided.</li>
+          <li>Access your account settings and update preferences.</li>
+        </ul>
+
+        <h3 id="controls-for-do-not-track">CONTROLS FOR DO-NOT-TRACK FEATURES</h3>
+
+        <p>
+          Most web browsers and some mobile operating systems and mobile applications 
+          include a Do-Not-Track (“DNT”) feature or setting you can activate to signal 
+          your privacy preference not to have data about your online browsing activities 
+          monitored and collected. No uniform technology standard for recognizing and 
+          implementing DNT signals has been finalized. As such, we do not currently respond 
+          to DNT browser signals or any other mechanism that automatically communicates your 
+          choice not to be tracked online. If a standard for online tracking is adopted that 
+          we must follow in the future, we will inform you about that practice in a revised 
+          version of this privacy policy.
+        </p>
+
+        <h3 id="privacy-policy-update">DO WE MAKE UPDATES TO THIS POLICY?</h3>
+
+        <p style="margin: 10px 0;">
+          <em>
+            <strong>In Short:</strong> Yes, we will update this policy as necessary to 
+            stay compliant with relevant laws.
+          </em>
+        </p>
+
+        <p>
+          We may update this privacy policy from time to time. The updated version will be 
+          indicated by an updated “Revised” date and the updated version will be effective as 
+          soon as it is accessible. If we make material changes to this privacy policy, we may 
+          notify you either by prominently posting a notice of such changes or by directly 
+          sending you a notification. We encourage you to review this privacy policy frequently 
+          to be informed of how we are protecting your information.
+        </p>
+
+        <h3 id="privacy-policy-issues-contact">HOW CAN YOU CONTACT US ABOUT THIS POLICY?</h3>
+
+        <p style="margin-bottom: 10px;">
+          If you have questions or comments about this policy, you may email us at <a href="mailto:compliance@coupinapp.com">compliance@coupinapp.com</a> or by post to:
+        </p>
+
+        <address>
+          <p>Coupin App</p>
+          <p>AppLeap Limited,</p>
+          <p>5 Jasper Ike Street,</p>
+          <p>off New Market Road</p>
+          <p>Victoria Island Extension. Lagos.</p>
+        </address>
+
+        <h3 id="data-protection=policy">DATA PROTECTION POLICY</h3>
+
+        <p style="margin-top: 15px;">
+          <strong>1.</strong> Who we are
+        </p>
+
+        <p style="margin: 10px 0;">
+          We are Appleap Limited (owners of the CoupinApp), a software 
+          solutions company based in Lagos, Nigeria. We are fully registered 
+          under the laws of the Federal Republic of Nigeria with registration 
+          number RC 1634119
+        </p>
+
+        <p>
+          We reserve the right to update this notice at any time. You 
+          will however be notified should we make any substantial update 
+          to this notice.
+        </p>
+
+        <p style="margin-top: 15px;">
+          <strong>2.</strong> We are a Data Controller
+        </p>
+
+        <p>
+          By the Nigerian Data Protection Regulation (“NDPR”), we are 
+          a data controller. This means that we are in accordance with 
+          the NDPR rules, responsible for deciding how we hold and use 
+          personal and business data you share with us via our mobile 
+          app to ensure the privacy and protection of your information.
+        </p>
+
+        <p style="margin-top: 15px;">
+          <strong>3.</strong>This Data Protection Notice applies to 
+          all clients whether former or prospective along with 
+          employees and representatives of business clients of 
+          Appleap Limited.
+        </p>
+
+        <p style="margin-top: 15px;">
+          <strong>4.</strong> In line with our obligation under the NDPR, 
+          we shall endeavour to keep your data safe on the principle of 
+          best practice.
+        </p>
+
+        <p style="margin-top: 15px;">
+          <strong>5.</strong> Should you decide to contact us for any clarification, please reach out to us as follows:
+        </p>
+
+        <p style="margin: 10px 0;">
+          The Compliance Manager
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          <a href="mailto:compliance@coupinapp.com">compliance@coupinapp.com</a>
+        </p>
+
+        <p>
+          We will endeavour to provide you with a response with 14 days of receipt of your mail. 
+        </p>
+
+        <p style="margin-top: 15px;">
+          <strong>6.</strong> How we collect information
+        </p>
+
+        <h5 style="font-size: 13px; text-transform: uppercase; margin-top: 10px;">Mobile App User Data</h5>
+
+        <p style="margin-bottom: 10px;">
+          Data is collected from the mobile app user for registration (name, email address,) 
+          The user is then later asked for their shopping interest, phone number, age 
+          range and gender to help personalise the deals and promotions sent to them 
+          via the Coupin app.
+        </p>
+
+        <h5 style="font-size: 13px; text-transform: uppercase;">Retail Merchant Data</h5>
+
+        <p style="margin-bottom: 10px;">
+          The merchants register on the web platform, where they input their business name, 
+          address and contact details (email and phone numbers). To activate a promotion on 
+          the mobile app to be viewed and redeemed by users, the merchant will initiate this 
+          by entering details of the promotional service or product they offer. 
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          We may also verify information about the merchants from public sources, such as 
+          social media and online searches.
+        </p>
+
+        <p style="margin-top: 15px;">
+          <strong>7.</strong> Purpose for Processing Personal Data
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          We use the mobile app user data to verify the identity of the user 
+          and redeem the discount at the merchant’s retail location. In 
+          addition, customer insights and trends are provided to merchants 
+          from users who physically visit their business location. These data 
+          sets are general and not tied to a specific mobile app user such as 
+          gender, age range statistics to help analyse trends.
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          We will strictly hold in confidence the data of our users to the 
+          extent permitted by applicable Nigerian laws.
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          The personal data collected for all clients:
+        </p>
+
+        <ol style="list-style: inside lower-alpha; margin-bottom: 10px;">
+          <li>
+            name
+          </li>
+          <li>
+            address
+          </li>
+          <li>
+            email address
+          </li>
+          <li>
+            mobile number
+          </li>
+          <li>
+            telephone number
+          </li>
+          <li>
+            age range
+          </li>
+          <li>
+            gender
+          </li>
+        </ol>
+
+        <p style="margin-top: 15px;">
+          <strong>8.</strong> Lawful Basis for Processing
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          The basis for processing this personal data is with your consent. 
+          Once given, you may withdraw your consent at any time by informing 
+          us via email at <a href="mailto:care@coupinapp.com">care@coupinapp.com</a> . You may also choose to change 
+          your preferences to control what information you are receiving via 
+          the profiles section in the mobile app.
+        </p>
+
+        <p style="margin-top: 15px;">
+          <strong>9.</strong> The Retention Periods for the Personal Data
+        </p>
+
+        <p style="margin-bottom: 10px;">
+          AppLeap retention period will in the minimum meet the requirements 
+          of relevant legislations within the Federal Republic of Nigeria.
+        </p>
+
+        <p style="margin-top: 15px;">
+          <strong>10.</strong>Individuals have the following rights in 
+          relation to the personal data used for marketing information:
+        </p>
+
+        <ol style="list-style: inside lower-alpha; margin-bottom: 10px;">
+          <li>
+            The Right to be Informed – this Data Protection Notice tells you about the 
+            processing of personal data, your rights and our responsibilities. 
+            We will keep you informed of any changes to this Notice and where there 
+            are any issues that arise that affect you.
+          </li>
+          <li>
+            The Right to Access – you can write to the Data Protection Contact on the 
+            above details to request what personal data is held about you. We 
+            will confirm that you are the correct Data Subject and it will take up 
+            to 30 days from the original request to send a full response.
+          </li>
+          <li>
+            The Right to Rectification –if any of your data is incorrect or requires 
+            updating, please notify the Data Protection Contact on the above details 
+            and the data will be rectified with 72 hours. 
+          </li>
+          <li>
+            The Right to Restrict Processing – you have the right to request that the 
+            processing of your personal data be restricted. We may not have to grant 
+            this right where processing is for the purpose of contractual or legal 
+            obligations. Any request for restriction will receive a response within 
+            14 calendar days.
+          </li>
+          <li>
+            The Right to Erasure – you have the right to request that data held on you 
+            be erased. We do not have to grant this right where processing is for the 
+            purpose of contractual or legal obligations. Any request for erasure 
+            will receive a response within 14 calendar days
+          </li>
+          <li>
+            The Right to Data Portability – you have the right to request to take the 
+            personal data you have given to us with you. Any request for a data transfer 
+            will receive a response within 14 calendar days.
+          </li>
+        </ol>
+
+        <p style="margin-top: 15px;">
+          <strong>11.</strong> Where processing is based on consent, 
+          you have the right to withdraw such consent whenever you choose.
+        </p>
+
+        <p style="margin-top: 15px;"><strong>12.</strong> Website Usage</p>
+
+        <ul>
+          <li>
+            We only use the information you provide about yourself and your company when 
+            using this website to answer your enquiry or to help us improve our service 
+            to you. We do not share this information with any third party except to the 
+            extent necessary to answer your enquiry if that enquiry requires the involvement 
+            of a third party. We use return e-mail addresses to answer the e-mail enquiries 
+            we receive. Such addresses are not used for any other purpose and are not shared 
+            with outside parties.
+          </li>
+          <li>
+            To prevent unauthorised access, maintain data accuracy, and ensure the correct 
+            use of information, we have put in place appropriate physical, electronic 
+            and managerial procedures to safeguard and secure the information we collect 
+            online. Where we collect information about you on this website, we will tell 
+            you how this information will be used.
+          </li>
+          <li>
+            We may store information you have provided so that we may contact you with further 
+            information about our services which may be of interest to you or your organisation. 
+          </li>
+          <li>
+            You have the right at any time to ask us not to contact you for marketing materials 
+            by e-mail or at all. If in the future, you decide you would like to stop 
+            receiving information from us, please e-mail us at <a href="mailto:care@coupinapp.com">care@coupinapp.com</a>
+          </li>
+          <li>
+            As part of our commitment to quality service and security, telephone calls may be 
+            recorded.
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="section footer" id="footer">
+    <div class="section-title">
+      <p>Start Finding Deals & Rewards Near You</p>     
+    </div>
+    <div class="section-rider">
+      <p>Download The App Now!</p>     
+    </div>
+    <div class="app-buttons">
+      <a href="https://play.google.com/store/apps/details?id=com.kibou.abisoyeoke_lawal.coupinapp" target="_blank" rel="noreferrer">
+        <img src="images/google-play.png" alt="Get it on Google Play">
+      </a>
+      <a target="_blank" rel="noreferrer">
+        <img src="images/ios-coming-soon.png" alt="Coming soon to the App Store">
+      </a>
+    </div>
+    <div class="information-section">
+      <img data-src="images/logo-rights.svg" alt="Coupin logo" class="footer-logo lazy">
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="mailto:care@coupinapp.com">Contact Us</a>
+        <a href="/terms.html">T&Cs</a>
+        <a href="/privacy.html">Privacy</a>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/coupinapp" target="_blank" rel="noreferrer"><img class="lazy" data-src="images/facebook icon.svg" alt="Follow us on Facebook"></a>
+        <a href="https://www.instagram.com/coupinapp/" target="_blank" rel="noreferrer"><img class="lazy" data-src="images/instagram icon.svg" alt="Follow us on Instagram"></a>
+        <a href="https://twitter.com/coupinapp" target="_blank" rel="noreferrer"><img class="lazy" data-src="images/twitter icon.svg" alt="Follow us on twitter"></a>
+      </div>
+      <p class="copyright">
+        © 2019 Coupin
+      </p>
+    </div>
+  </div>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6%2Cdefault%2Ces2016%2Ces2017%2Ces5%2Ces7%2CArray.from%2CIntersectionObserver%2CIntersectionObserverEntry%2CHTMLDocument%2CNodeList.prototype.forEach%2CNodeList.prototype.%40%40iterator%2CNode.prototype.contains%2CArray.prototype.filter%2CArray.prototype.some"></script>
+  <script src="https://cdn.jsdelivr.net/npm/yall-js@3.1.1/dist/yall.min.js" integrity="sha256-x2ozZDdYchsGagBnqUbKpNJ2XcD91OmzuiI7R7uQafE=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" integrity="sha256-Geq3csjLKRnRTVY3dLJJkZ9JiSlfVM9kRDRwyZZJMcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha256-XJuslujM3cGzRZGiSi/KNSdk58uORO/mmrEQNjVtb5k=" crossorigin="anonymous"></script>
+</body>
+
+</html>
