@@ -64,6 +64,10 @@ header.nav {
   }
 }
 
+a {
+  color: $o-fColor--18AD87;
+}
+
 .terms-container {
   width: 60%;
   margin: 0 auto;
@@ -78,8 +82,9 @@ header.nav {
 }
 
 .terms-content-body {
-  ol {
+  ol, ul {
     padding-left: 20px;
+    list-style: inside;
 
     li {
       text-transform: capitalize;
@@ -98,6 +103,14 @@ header.nav {
   
   h3 {
     margin: 25px 0 7px;
+  }
+
+  h4 {
+    margin: 15px 0;
+  }
+
+  h5 {
+    
   }
 }
 // end of terms page

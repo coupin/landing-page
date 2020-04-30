@@ -75,6 +75,11 @@ module.exports = {
       filename: 'terms.html',
       template: path.join(__dirname, 'src/terms.html')
     }),
+    new HtmlWebpackPlugin({
+      title: 'Privacy Policy',
+      filename: 'privacy.html',
+      template: path.join(__dirname, 'src/privacy.html')
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({}),
     new MiniCssExtractPlugin({
