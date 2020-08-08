@@ -57,6 +57,14 @@ header.nav {
   }
 
   @media only screen and (min-width : 320px) and (max-width : 767px) {
+    nav {
+      margin-right: 7px;
+    }
+
+    .brand {
+      margin-left: 7px;
+    }
+
     nav a, nav span {
       font-weight: 600;
       margin-left: 10px;
