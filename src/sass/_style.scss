@@ -376,6 +376,41 @@
     display: block;
   }
 
+  .lions-den-modal {
+    background-size: cover !important;
+    height: 95vh !important;
+    width: 95% !important;
+    left: 1px !important;
+    top: 7px !important;
+
+    .as-seen {
+      flex-grow: 0;
+      margin-bottom: 5px;
+      padding-top: 30px;
+  
+      span:nth-child(1) {
+        // color: #DDB816;
+        display: block;
+        font-size: 1.2em !important;
+        text-align: center;
+      }
+      
+      span:nth-child(2) {
+        // color: #DDB816;
+        display: block;
+        font-size: 3.2em !important;
+        text-align: center;
+      }
+    }
+
+    div {
+      .youtube-frame {
+        height: 180px !important;
+        width: 300px !important;
+      }
+    }
+  }
+
   .section:not(.hero.section) {
     margin-top: 20px;
     padding-top: 0;
@@ -533,6 +568,77 @@
           height: rem(190px);
         }
       }
+    }
+  }
+}
+
+// Lions den styling
+.lions-den-modal {
+  align-items: center;
+  background-image: url("../images/lions-den-bg.jpeg");
+  background-position: center;
+  background-size: contain;
+  border: 8px solid black;
+  opacity: 0.97;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  // justify-content: center;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  transition: all ease-in-out 1s;
+  width: 80%;
+  z-index: 999;
+
+  &.hidden {
+    opacity: 0;
+    visibility:hidden;
+  }
+
+  .as-seen {
+    flex-grow: 0;
+    margin-bottom: 10px;
+    padding-top: 30px;
+
+    span:nth-child(1) {
+      // color: #DDB816;
+      color: rgb(234, 233, 233);
+      font-size: 1.4em;
+      font-style: italic;
+      font-weight: 200;
+      margin-right: 5px;
+      text-transform: lowercase;
+    }
+    
+    span:nth-child(2) {
+      color: #DF8916;
+      // color: yellow;
+      font-weight: bold;
+      font-size: 4em;
+      text-transform: uppercase;
+    }
+  }
+
+  .close-icon {
+    cursor: pointer;
+    height: 16px;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    justify-content: center;
+
+    .youtube-frame {
+      height: 400px;
+      width: 650px;
     }
   }
 }
