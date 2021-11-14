@@ -20,6 +20,11 @@ window._scrollTo = function (id) {
   document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
 };
 
+window.dismissModal = function () {
+  console.log('Dismissing')
+  document.querySelector('#lions-den-modal').classList.add('hidden');
+}
+
 import './index.html';
 import './terms.html';
 import './privacy.html';
