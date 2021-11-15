@@ -386,21 +386,21 @@
     .as-seen {
       display: block;
       flex-grow: 0;
-      font-size: 2.2em !important;
+      font-size: 1.2em !important;
       margin-bottom: 5px;
       padding-top: 30px;
       text-align: center;
     }
 
     #lions-den-logo {
-      height: 150px;
-      width: 150px;
+      height: 80px !important;
+      width: 80px !important;
     }
 
     div {
       .youtube-frame {
-        height: 250px !important;
-        width: 320px !important;
+        height: 400px !important;
+        width: 340px !important;
       }
     }
   }
@@ -564,25 +564,32 @@
       }
     }
   }
+
+  .lions-den-modal {
+    div {
+      .youtube-frame {
+        height: 300px !important;
+        width: 700px !important;
+      }
+    }
+  }
 }
 
 // Lions den styling
 .lions-den-modal {
   align-items: center;
-  // background-image: url("../images/lions-den-bg.jpeg");
-  // background-position: center;
-  // background-size: contain;
-  background: rgba(0, 0, 0, 0.75);
-  border: 8px solid black;
+  background: rgba(0, 0, 0, 0.5);
+  border: 4px solid black;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 90vh;
   // justify-content: center;
+  overflow: hidden;
   position: fixed;
-  left: 10%;
-  top: 10%;
+  left: 5%;
+  top: 5%;
   transition: all ease-in-out 1s;
-  width: 80%;
+  width: 90%;
   z-index: 999;
 
   &.hidden {
@@ -590,14 +597,23 @@
     visibility:hidden;
   }
 
+  #lions-den-logo {
+    position: absolute;
+    left: 0;
+    height: 100px;
+    margin: 5px;
+    width: 100px;
+    top: 0;
+  }
+
   .as-seen {
     flex-grow: 0;
     margin-bottom: 10px;
     padding-top: 30px;
-    color: #DF8916;
+    color: white;
     // color: yellow;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .close-icon {
@@ -617,8 +633,8 @@
     justify-content: center;
 
     .youtube-frame {
-      height: 400px;
-      width: 650px;
+      height: 700px;
+      width: 1400px;
     }
   }
 }
@@ -629,6 +645,15 @@
 
     .container {
       width: 80% !important;
+    }
+  }
+
+  .lions-den-modal {
+    div {
+      .youtube-frame {
+        height: 500px !important;
+        width: 1000px !important;
+      }
     }
   }
 }
