@@ -384,29 +384,23 @@
     top: 7px !important;
 
     .as-seen {
+      display: block;
       flex-grow: 0;
+      font-size: 2.2em !important;
       margin-bottom: 5px;
       padding-top: 30px;
-  
-      span:nth-child(1) {
-        // color: #DDB816;
-        display: block;
-        font-size: 1.2em !important;
-        text-align: center;
-      }
-      
-      span:nth-child(2) {
-        // color: #DDB816;
-        display: block;
-        font-size: 3.2em !important;
-        text-align: center;
-      }
+      text-align: center;
+    }
+
+    #lions-den-logo {
+      height: 150px;
+      width: 150px;
     }
 
     div {
       .youtube-frame {
-        height: 180px !important;
-        width: 300px !important;
+        height: 250px !important;
+        width: 320px !important;
       }
     }
   }
@@ -575,11 +569,11 @@
 // Lions den styling
 .lions-den-modal {
   align-items: center;
-  background-image: url("../images/lions-den-bg.jpeg");
-  background-position: center;
-  background-size: contain;
+  // background-image: url("../images/lions-den-bg.jpeg");
+  // background-position: center;
+  // background-size: contain;
+  background: rgba(0, 0, 0, 0.75);
   border: 8px solid black;
-  opacity: 0.97;
   display: flex;
   flex-direction: column;
   height: 80vh;
@@ -600,24 +594,10 @@
     flex-grow: 0;
     margin-bottom: 10px;
     padding-top: 30px;
-
-    span:nth-child(1) {
-      // color: #DDB816;
-      color: rgb(234, 233, 233);
-      font-size: 1.4em;
-      font-style: italic;
-      font-weight: 200;
-      margin-right: 5px;
-      text-transform: lowercase;
-    }
-    
-    span:nth-child(2) {
-      color: #DF8916;
-      // color: yellow;
-      font-weight: bold;
-      font-size: 4em;
-      text-transform: uppercase;
-    }
+    color: #DF8916;
+    // color: yellow;
+    font-weight: bold;
+    font-size: 2em;
   }
 
   .close-icon {
