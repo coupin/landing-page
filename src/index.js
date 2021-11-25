@@ -21,8 +21,8 @@ window._scrollTo = function (id) {
 };
 
 window.dismissModal = function () {
-  console.log('Dismissing')
   document.querySelector('#lions-den-modal').classList.add('hidden');
+  document.querySelector('#youtube-frame').setAttribute('src', 'https://www.youtube.com/embed/rcm0XMAQ5As?autoplay=0&enablejsapi=1');
 }
 
 import './index.html';
