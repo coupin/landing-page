@@ -107,7 +107,7 @@
     <p class="as-seen">As seen on the...</p>
     <img src="images/Lions-den-transparent.png" alt="lions-den-logo" id="lions-den-logo">
     <div>
-      <iframe class="youtube-frame" id="youtube-frame" src="https://www.youtube.com/embed/rcm0XMAQ5As?autoplay=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="youtube-frame" id="youtube-frame" src="https://www.youtube.com/embed/rcm0XMAQ5As?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -153,7 +153,14 @@
         <a onclick="_scrollTo('#features')">Explore</a>
         <a href="mailto:care@coupinapp.com" class="hide-mobile">Contact</a>
         <span>|</span>
-        <a href="https://dashboard.coupinapp.com/merchant">Become A Merchant</a>
+        <!-- <a href="https://dashboard.coupinapp.com/merchant">Become A Merchant</a> -->
+        <div id="merchant-dropdown">
+          Become A Merchant
+          <div id="merchant-dropdown-items">
+            <a href="https://dashboard.coupinapp.com/merchant?tab=register">Register</a>
+            <a href="https://dashboard.coupinapp.com/merchant?tab=sign-in">Sign In</a>
+          </div>
+        </div>
         <!-- <a href="https://dashboard.coupinapp.com/merchant">Merchant</a> -->
       </nav>
     </header>
