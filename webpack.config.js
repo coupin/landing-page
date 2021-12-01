@@ -9,6 +9,7 @@ const postcsspresetenv = require("postcss-preset-env");
 const cssnano = require("cssnano");
 
 module.exports = {
+  cache: false,
   mode: process.env.NODE_ENV || 'development',
   entry: path.join(__dirname, 'src/index.js'),
   output: {
