@@ -8,39 +8,48 @@
 }
 
 #merchant-dropdown-items {
-  // background: #18ad87;
-  // border-radius: 2px;
+  background-color: #fff;
+  border-radius: 2px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-top: 20px;
   overflow: hidden;
   position: absolute;
-  height: 68px;
-  right: 0;
+  padding: 0.5rem;
+  right: -0.5rem;
   text-align: center;
   top: 0;
   transition: all 200ms ease-in-out;
   width: 100%;
+  visibility: hidden;
 
-  // &.show {
-  //   height: 68px;
-  // }
+  &.show {
+    visibility: visible;
+  }
+
+  & .register {
+    background-color: #50AA89;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+
+  & .register:hover {
+    background-color: #0f9170;
+  }
+
+  & .sign-in {
+    color: #18ad87;
+  }
 
   a {
-    color: white;
     font-family: "Maven Pro";
     margin-left: 4px;
     margin-right: 4px;
     padding: 2px 0px;
     font-size: .875rem;
     font-weight: 500;
-    transition: all 200ms linear;
-
-    &:hover {
-      // background: black;
-      color: black;
-    }
   }
 }
 
