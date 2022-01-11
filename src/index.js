@@ -9,6 +9,7 @@ import './sass/main.scss';
 
 import './js/preload';
 import './js/lazy-load';
+import './js/mobile-nav';
 
 // import './js/testimonials';
 
