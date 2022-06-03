@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+
+/* =================== Hero Styles ============= */
+.hero {
+  position: relative;
+  height: 80vh;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__description {
+  width: 60%;
+}
+
+.hero__image {
+  position: relative;
+  width: 20%;
+}
+
+.hero__description h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.coupin-pin-one {
+  position: absolute;
+  top: 3rem;
+  left: -6rem;
+}
+
+.coupin-pin-two {
+  position: absolute;
+  top: 12.5rem;
+  left: 2.4rem;
+}
+
+.hero__description__featured-stores {
+  padding-top: 1rem;
+  width: 50%;
+}
+
+.hero__description__featured-stores img {
+  width: 30px;
+  height: 40px;
+}
+
+.hero__description__featured-stores img:nth-child(3) {
+  width: 90px;
+  height: 40px;
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero__content {
+    width: auto;
+  }
+
+  .hero__description {
+    width: 70%;
+  }
+
+  .cta {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero__content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+  }
+
+  .hero__description h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero__description {
+    width: 100%;
+  }
+
+  .hero__image {
+    display: none;
+  }
+
+  .cta {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .hero__description__featured-stores {
+    width: 100%;
+  }
+
+  .hero__description__featured-stores img {
+    width: 30px;
+    height: 35px;
+  }
+
+  .hero__description__featured-stores img:nth-child(3) {
+    width: 60px;
+    height: 30px;
+  }
+}
+
+/* =================== end of Hero Styles ============= */
+
+/* =================== How it Works Styles ============= */
+
+.how-it-works {
+  background-color: #fafafa;
+  padding: 2rem;
+}
+
+.how-it-works h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.how-it-works__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.how-it-works__content__step {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+}
+
+.how-it-works__content__step__icon-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.how-it-works__content__step__icon-box img {
+  width: 35px;
+  height: 35px;
+}
+
+.how-it-works__content__step__description p {
+  font-size: 14px;
+}
+
+.how-it-works__content__step__description h4 {
+  color: #15a580;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1023px) {
+  .how-it-works__content__step {
+    width: 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .how-it-works__content {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .how-it-works__content__step {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
+/* =================== end of How it Works Styles ============= */
+
+/* =================== Explore Styles ============= */
+
+.explore {
+  margin: 5rem 0;
+}
+
+.explore__header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.explore__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore__body__content {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.13);
+  width: 28%;
+  height: 270px;
+  overflow: hidden;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.explore__body__content__bg-image {
+  height: 30%;
+  background-image: url('../assets/images/hard-rock-cafe.png');
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  overflow: hidden;
+}
+
+.explore__body__content__bg-image > div {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.13) 7.18%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.explore__body__content__bg-image__title {
+  position: absolute;
+  color: #fff;
+  left: 55%;
+  top: 0;
+  transform: translate(-50%, 50%);
+}
+
+.explore__body__content__description-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  font-size: 13px;
+  color: #35343d;
+}
+
+.explore__body__content__description-item:nth-child(1) {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.explore__body__content__description-item:nth-child(3),
+.explore__body__content__description-item:nth-child(4) {
+  color: #5f5d70;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.explore__body__content__description-item:nth-child(4) {
+  color: #00ca9d;
+}
+
+.explore__body__content__description-item span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.explore__footer {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .explore__header h1 {
+    margin: 0 auto;
+  }
+
+  .explore__header button {
+    padding: 0.5rem 1rem;
+    display: none;
+  }
+
+  .explore__body {
+    display: block;
+  }
+
+  .explore__body__content {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .explore__footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* =================== end of Explore Styles ============= */
+
+/* =================== Guide Styles ============= */
+.guide__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.guide__main__instructions-item {
+  border-left: 5px solid #eff9f7;
+  padding: 1rem 2rem;
+  color: #828282;
+  cursor: pointer;
+}
+
+.guide__main__instructions-item.active {
+  border-left: 5px solid #00ca9d;
+  color: #02100d;
+}
+
+.guide__main__image {
+  background-color: #eff9f7;
+  overflow: hidden;
+  position: relative;
+}
+
+.guide__main__instructions,
+.guide__main__image {
+  width: 50%;
+  height: 400px;
+}
+
+.guide__main__image img {
+  position: absolute;
+  height: 400px;
+  width: 200px;
+  top: 30%;
+  left: 30%;
+}
+
+@media (max-width: 767px) {
+  .guide__main {
+    flex-direction: column-reverse;
+  }
+
+  .guide h1 {
+    text-align: center;
+  }
+
+  .guide__main__instructions,
+  .guide__main__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .guide__main__image {
+    margin-bottom: 2rem;
+    height: 300px;
+  }
+
+  .guide__main__image img {
+    left: 20%;
+  }
+}
+
+/* =================== end of Guide Styles ============= */
+
+/* =================== footer Styles ============= */
+.footer {
+  position: relative;
+  background-color: #02100D;
+  margin-top: 15rem;
+  color: #fff;
+}
+
+.footer__main {
+  padding: 5rem 2rem 2rem;
+  background-color: #02100d;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.footer__get-app {
+  position: absolute;
+  border-radius: 20px;
+  background-color: #00AD86;
+  width: 750px;
+  height: 200px;
+  text-align: center;
+  padding: 2rem;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer__get-app__main {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.footer__get-app__main h1,
+.footer__get-app__main p {
+  margin-bottom: 1rem;
+}
+
+.footer__main__socials,
+.footer__main__copyright {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__main__copyright > p {
+  width: 60%;
+}
+
+.footer__main__socials ul,
+.footer__main__copyright ul {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.footer__main__socials a {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 25px;
+}
+
+.footer__main__copyright a {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .footer__get-app {
+    width: fit-content;
+    border-radius: 0;
+  }
+
+  .footer__main__copyright > p {
+    width: 50%;
+  }
+}
+
+@media(max-width: 767px) {
+  .footer {
+    margin: 0;
+  }
+
+  .footer__get-app {
+    position: static;
+    border-radius: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    transform: translate(0, 0)
+  }
+
+  .footer__get-app__main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .footer__main {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .footer__main__copyright {
+    display: block;
+  }
+
+  .footer__main__copyright p {
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+/* =================== end of footer Styles ============= */

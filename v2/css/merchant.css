@@ -1,0 +1,296 @@
+/* =================== Hero Styles ============= */
+.hero {
+  position: relative;
+  height: 90vh;
+  text-align: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero__content {
+  position: absolute;
+  width: 70%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.hero__image img {
+  width: 1008px;
+  height: 466px;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero__content p {
+  margin: 1rem 0;
+}
+
+@media(max-width: 767px) {
+  .hero__content {
+    width: 80%;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .hero__image img {
+    width: calc(1008px / 3);
+    height: calc(466px / 3);
+  }
+}
+
+@media(max-width: 1024px) {
+  .hero__image img {
+    width: calc(1008px / 2);
+    height: calc(466px / 2);
+  }
+}
+
+/* =================== end of Hero Styles ============= */
+/* =================== Info Styles ============= */
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+
+.info__left {
+  width: 40%;
+}
+
+.info__left h3 {
+  color: #00AD86;
+  margin-bottom: 1rem;
+}
+
+.info__left span,
+.info__left p {
+  font-size: 28px;
+}
+
+.info__left span {
+  color: #9B99A9;
+}
+
+.info__right {
+  width: 50%;
+  height: 400px;
+}
+
+.info__right {
+  background-color: #eff9f7;
+  overflow: hidden;
+  position: relative;
+}
+
+.info__right img {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  top: 30%;
+  left: 30%;
+}
+
+@media(max-width: 767px) {
+  .info {
+    flex-direction: column-reverse;
+  }
+
+  .info__left,
+  .info__right {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .info__right img {
+    left: 20%;
+  }
+}
+
+/* =================== end of Info Styles ============= */
+/* =================== Features Styles ============= */
+
+.features {
+  padding: 3rem;
+  background-color: #00AD86;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.features__list {
+  width: 40%;
+}
+
+.features__list ul {
+  margin: 2rem 0;
+}
+
+.features__list li {
+  margin: 1rem 0;
+}
+
+.features__list li::before {
+  content: '+';
+  color: #00AD86;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.features__list button {
+  background-color: #fff;
+  color: #00AD86;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.features__image img {
+  height: 395px;
+  width: 607px;
+}
+
+@media(max-width: 767px) {
+  .features {
+    flex-direction: column-reverse;
+  }
+
+  .features__list {
+    width: 100%;
+  }
+
+  .features__list li::before {
+    padding: 0.1rem 0.3rem;
+  }
+
+  .features__image img {
+    height: 198px;
+    width: 304px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .features__image img {
+    height: 200px;
+    width: 350px;
+  }
+
+  .features__list {
+    width: 50%;
+  }
+}
+
+/* =================== end of Features Styles ============= */
+/* =================== footer Styles ============= */
+.footer {
+  position: relative;
+  background-color: #02100D;
+  color: #fff;
+}
+
+.footer__main {
+  padding: 5rem 2rem 2rem;
+  background-color: #02100d;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.footer__main__socials,
+.footer__main__copyright {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__main__copyright > p {
+  width: 60%;
+}
+
+.footer__main__socials ul,
+.footer__main__copyright ul {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.footer__main__socials a {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 25px;
+}
+
+.footer__main__copyright a {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .footer__get-app {
+    width: fit-content;
+    border-radius: 0;
+  }
+
+  .footer__main__copyright > p {
+    width: 50%;
+  }
+}
+
+@media(max-width: 767px) {
+  .footer {
+    margin: 0;
+  }
+
+  .footer__get-app {
+    position: static;
+    border-radius: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    transform: translate(0, 0)
+  }
+
+  .footer__get-app__main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .footer__main {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .footer__main__copyright {
+    display: block;
+  }
+
+  .footer__main__copyright p {
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+/* =================== end of footer Styles ============= */
+
