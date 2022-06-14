@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* =============== Tag styles =============== */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: #fafffc;
+  color: #02100d;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =============== End of Tag styles =============== */
+
+/* =============== Custom class  styles =============== */
+
+.container {
+  padding: 1rem 4rem;
+}
+
+.button {
+  color: #fff;
+  background-color: #15a580;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0e8a6b;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-grey {
+  color: #828282;
+}
+
+.text-green {
+  color: #15a580;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.show {
+  display: block; 
+}
+
+.hide {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+
+/* =================== Loader Styles ========================= */
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.loader div {
+  animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.loader div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00ca9d;
+  margin: -4px 0 0 -4px;
+}
+.loader div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.loader div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.loader div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.loader div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.loader div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.loader div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.loader div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.loader div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.loader div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.loader div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.loader div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.loader div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.loader div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.loader div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.loader div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.loader div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 767px) {
+  .loader {
+    margin-bottom: 5rem;
+  }
+}
+
+
+/* =================== End of Loader Styles ========================= */
+
+@media(max-width: 1023px) {
+  .container {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+/* =============== end of Custom class  styles =============== */
+
+/* =================== Navigation Styles ============= */
+
+.navigation-web {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.navigation-web a:not(.available-deals) {
+  padding-right: 3rem;
+  color: #828282;
+}
+
+.navigation-web .available-deals {
+  background-color: #15a580;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+
+.navigation-mobile .available-deals {
+  padding: 1rem;
+  background-color: #15a580;
+}
+
+.nav-left,
+.nav-right {
+  padding-top: 0.4rem;
+}
+
+.navigation-web > div {
+  display: flex;
+}
+
+.available-deals:hover {
+  background-color: #0e8a6b;
+}
+
+.navigation-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navigation-mobile {
+    display: block;
+  }
+
+  .navigation-mobile a:not(.available-deals) {
+    color: #828282;
+  }
+
+  .navigation-mobile .available-deals a {
+    color: #fff;
+    background-color: #15a580;
+    padding: 1rem;
+  }
+
+  .navigation-mobile__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation-mobile__body {
+    text-align: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navigation-mobile__body ul {
+    padding: 1rem;
+  }
+
+  .navigation-mobile__body li {
+    padding: 1rem;
+  }
+
+  .navigation-mobile__body .available-deals {
+    background-color: #15a580;
+    color: #fff;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 0.3rem 0;
+    transition: 0.1s all linear;
+  }
+
+  .hamburger-one.active {
+    transform: rotate(45deg);
+  }
+
+  .hamburger-two.active {
+    transform: translate(0, -8px) rotate(-45deg);
+  }
+
+  .navigation-web {
+    display: none;
+  }
+}
+
+/* =================== end of Navigation Styles ============= */
