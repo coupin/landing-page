@@ -10,7 +10,8 @@
   "scripts": {
     "start:dev": "node_modules/.bin/webpack-dev-server --config=webpack.config.js --host 0.0.0.0",
     "build": "NODE_ENV=production node_modules/.bin/webpack --config=webpack.config.js",
-    "deploy:now": "(cd dist && now)"
+    "postinstall": "yarn build",
+    "start": "node server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "angled-edges": "^2.0.0",
+    "express": "^4.18.1",
     "lodash.template": "^4.5.0",
     "sass-rem": "^2.0.1",
     "yall-js": "^3.1.1"
